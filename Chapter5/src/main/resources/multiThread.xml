@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="thread" parallel="classes" thread-count="2">
+    <test name="threadTest">
+        <classes>
+            <class name="com.course.testng.multiThread.MultiThreadOnXml"></class>
+        </classes>
+    </test>
+<!--    模拟不同的class tag-->
+    <test name="threadTest1">
+        <classes>
+            <class name="com.course.testng.multiThread.MultiThreadOnXml"></class>
+        </classes>
+    </test>
+
+</suite>
