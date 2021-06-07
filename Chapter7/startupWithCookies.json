@@ -1,5 +1,19 @@
 [
   {
+    "description": "这是一个能返回cookies信息的get请求",
+    "request": {
+      "uri": "/getCookies",
+      "method": "get"
+    },
+    "response": {
+      "cookies": {
+        "login": "true"
+      },
+      "text": "成功获取到cookies信息啦"
+
+    }
+  },
+  {
     "description": "这是一个携带cookie的get请求",
     "request": {
       "uri": "/get/with/cookie",
@@ -13,7 +27,28 @@
     }
   },
   {
-    "description": "这是一个携带cookie的post请求",
+    "description": "这是一个携带cookie和param的get请求",
+    "request": {
+      "uri": "/get/with/cookieparam",
+      "method": "get",
+      "cookies": {
+        "login": "true"
+      },
+      "queries": {
+        "name": "lucy",
+        "age": "17"
+      }
+    },
+    "response": {
+      "status": 200,
+      "json": {
+          "cookie": "success",
+          "lucy": "success"
+      }
+    }
+  },
+  {
+    "description": "这是一个携带cookie和json数据的post请求",
     "request": {
       "uri": "/post/with/cookie",
       "method": "post",
@@ -21,16 +56,37 @@
         "login": "true"
       },
       "json": {
-        "name": "huhansan",
+        "name": "lucy",
         "age": "18"
       }
     },
     "response": {
-      "status": "200",
+      "status": 200,
       "json": {
-        "code": 0,
-        "status": 200,
-        "name": "huhansan"
+        "status": "0",
+        "lucy": "success"
+      }
+    }
+  },
+  {
+    "description": "这是一个携带cookie和form-data数据的post请求",
+    "request": {
+      "uri": "/post/with/cookieform",
+      "method": "post",
+      "cookies": {
+        "login": "true"
+      },
+      "forms": {
+        "name": "lucy",
+        "age": "18"
+      }
+    },
+    "response": {
+      "status": 200,
+      "json": {
+        "status": "0",
+        "cookie": "success",
+        "lucy": "success"
       }
     }
   }

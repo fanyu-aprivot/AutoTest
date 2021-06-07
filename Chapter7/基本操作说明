@@ -1,1 +1,1 @@
-java -jar ./moco-runner-0.10.0-standalone.jar http -p 8080 -c ./startupPost.json
+java -Dfile.encoding=utf-8 -jar ./moco-runner-0.10.0-standalone.jar http -p 8080 -c ./startupWithCookies.json
