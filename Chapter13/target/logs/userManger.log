@@ -1,0 +1,101 @@
+2021-06-11 19:55:34.771 [main] INFO  com.course.Application - Starting Application v1.0-SNAPSHOT on LAPTOP-LMMPH4VI with PID 19656 (C:\Users\darli\.ssh\workspace\muke\AutoTest\Chapter13\target\Chapter13-1.0-SNAPSHOT.jar started by darli in C:\Users\darli\.ssh\workspace\muke\AutoTest\Chapter13\target)
+2021-06-11 19:55:34.783 [main] INFO  com.course.Application - No active profile set, falling back to default profiles: default
+2021-06-11 19:55:34.828 [main] INFO  o.s.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@34ce8af7: startup date [Fri Jun 11 19:55:34 CST 2021]; root of context hierarchy
+2021-06-11 19:55:35.330 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.course]' package. Please check your configuration.
+2021-06-11 19:55:35.605 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c48613a2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-11 19:55:37.042 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-06-11 19:55:37.061 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-06-11 19:55:37.061 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.28
+2021-06-11 19:55:37.069 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.19] using APR version [1.6.5].
+2021-06-11 19:55:37.070 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-06-11 19:55:37.070 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-06-11 19:55:37.078 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2021-06-11 19:55:37.140 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-06-11 19:55:37.140 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2312 ms
+2021-06-11 19:55:37.271 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2021-06-11 19:55:37.274 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-06-11 19:55:37.274 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-06-11 19:55:37.274 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-06-11 19:55:37.274 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2021-06-11 19:55:37.887 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/getUserInfo],methods=[POST]}" onto public java.util.List<com.course.model.User> com.course.controller.UserManger.getUserInfo(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2021-06-11 19:55:37.889 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/addUser],methods=[POST]}" onto public java.lang.Boolean com.course.controller.UserManger.addUser(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2021-06-11 19:55:37.890 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/updateUserInfo],methods=[POST]}" onto public int com.course.controller.UserManger.updateUserInfo(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2021-06-11 19:55:37.891 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/login],methods=[POST]}" onto public java.lang.Boolean com.course.controller.UserManger.login(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String)
+2021-06-11 19:55:37.893 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2021-06-11 19:55:37.896 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2021-06-11 19:55:37.896 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2021-06-11 19:55:37.897 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2021-06-11 19:55:37.901 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-06-11 19:55:37.902 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-06-11 19:55:38.165 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@34ce8af7: startup date [Fri Jun 11 19:55:34 CST 2021]; root of context hierarchy
+2021-06-11 19:55:38.215 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-06-11 19:55:38.215 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-06-11 19:55:38.240 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-06-11 19:55:38.387 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2021-06-11 19:55:38.388 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2021-06-11 19:55:38.392 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2021-06-11 19:55:38.395 [main] INFO  org.springframework.context.support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2021-06-11 19:55:38.395 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-06-11 19:55:38.410 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-06-11 19:55:38.419 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-06-11 19:55:38.600 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-11 19:55:38.603 [main] INFO  com.course.Application - Started Application in 4.111 seconds (JVM running for 4.676)
+2021-06-11 19:56:46.272 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-06-11 19:56:46.272 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2021-06-11 19:56:46.303 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 31 ms
+2021-06-11 19:56:46.338 [http-nio-8080-exec-1] INFO  com.course.controller.UserManger - request url is:http://localhost:8080/v1/login
+2021-06-11 19:56:46.340 [http-nio-8080-exec-1] INFO  com.course.controller.UserManger - lucyerror
+2021-06-11 19:56:46.340 [http-nio-8080-exec-1] INFO  com.course.controller.UserManger - 123
+2021-06-11 19:56:46.361 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-06-11 19:56:46.987 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-06-11 19:56:47.061 [http-nio-8080-exec-1] INFO  com.course.controller.UserManger - userOld is :null
+2021-06-11 19:56:47.061 [http-nio-8080-exec-1] INFO  com.course.controller.UserManger - 此用户lucyerror不存在
+2021-06-11 19:56:47.128 [http-nio-8080-exec-3] INFO  com.course.controller.UserManger - request url is:http://localhost:8080/v1/login
+2021-06-11 19:56:47.128 [http-nio-8080-exec-3] INFO  com.course.controller.UserManger - tt
+2021-06-11 19:56:47.128 [http-nio-8080-exec-3] INFO  com.course.controller.UserManger - 123
+2021-06-11 19:56:47.133 [http-nio-8080-exec-3] INFO  com.course.controller.UserManger - userOld is :User(id=1, userName=tt, password=123, age=26, sex=0, permission=0, isDelete=0)
+2021-06-11 19:56:47.134 [http-nio-8080-exec-3] INFO  com.course.controller.UserManger - 登录成功------>用户是tt
+2021-06-11 19:56:47.269 [http-nio-8080-exec-5] INFO  com.course.controller.UserManger - verifyCookie方法获取到的cookie是[Ljavax.servlet.http.Cookie;@eee2965
+2021-06-11 19:56:47.279 [http-nio-8080-exec-5] INFO  com.course.controller.UserManger - addUser方法执行成功，插入数据条数1
+2021-06-11 19:56:47.302 [http-nio-8080-exec-7] INFO  com.course.controller.UserManger - verifyCookie方法获取到的cookie是[Ljavax.servlet.http.Cookie;@5f7b0b48
+2021-06-11 19:56:47.325 [http-nio-8080-exec-7] INFO  com.course.controller.UserManger - getUserInfo查询到的用户数量是1
+2021-06-11 19:56:47.383 [http-nio-8080-exec-9] INFO  com.course.controller.UserManger - verifyCookie方法获取到的cookie是[Ljavax.servlet.http.Cookie;@479a6e99
+2021-06-11 19:56:47.385 [http-nio-8080-exec-9] INFO  com.course.controller.UserManger - getUserInfo查询到的用户数量是2
+2021-06-11 19:56:47.462 [http-nio-8080-exec-1] INFO  com.course.controller.UserManger - verifyCookie方法获取到的cookie是[Ljavax.servlet.http.Cookie;@a1c43f9
+2021-06-11 19:56:47.466 [http-nio-8080-exec-1] INFO  com.course.controller.UserManger - 调用SQL更新用户信息成功
+2021-06-11 19:56:47.467 [http-nio-8080-exec-1] INFO  com.course.controller.UserManger - 调用SQL更新的用户是：12
+2021-06-11 19:56:47.468 [http-nio-8080-exec-1] INFO  com.course.controller.UserManger - 更新后查到的user是:User(id=12, userName=小兰9, password=111, age=19, sex=1, permission=14, isDelete=0)
+2021-06-11 19:56:47.492 [http-nio-8080-exec-3] INFO  com.course.controller.UserManger - verifyCookie方法获取到的cookie是[Ljavax.servlet.http.Cookie;@3e497f33
+2021-06-11 19:56:47.495 [http-nio-8080-exec-3] INFO  com.course.controller.UserManger - 调用SQL更新用户信息成功
+2021-06-11 19:56:47.495 [http-nio-8080-exec-3] INFO  com.course.controller.UserManger - 调用SQL更新的用户是：13
+2021-06-11 19:56:47.496 [http-nio-8080-exec-3] INFO  com.course.controller.UserManger - 更新后查到的user是:User(id=13, userName=tom, password=1221, age=26, sex=0, permission=1, isDelete=1)
+2021-06-11 19:57:22.605 [http-nio-8080-exec-5] INFO  com.course.controller.UserManger - request url is:http://localhost:8080/v1/login
+2021-06-11 19:57:22.605 [http-nio-8080-exec-5] INFO  com.course.controller.UserManger - lucyerror
+2021-06-11 19:57:22.605 [http-nio-8080-exec-5] INFO  com.course.controller.UserManger - 123
+2021-06-11 19:57:22.607 [http-nio-8080-exec-5] INFO  com.course.controller.UserManger - userOld is :null
+2021-06-11 19:57:22.607 [http-nio-8080-exec-5] INFO  com.course.controller.UserManger - 此用户lucyerror不存在
+2021-06-11 19:57:22.628 [http-nio-8080-exec-7] INFO  com.course.controller.UserManger - request url is:http://localhost:8080/v1/login
+2021-06-11 19:57:22.629 [http-nio-8080-exec-7] INFO  com.course.controller.UserManger - tt
+2021-06-11 19:57:22.629 [http-nio-8080-exec-7] INFO  com.course.controller.UserManger - 123
+2021-06-11 19:57:22.630 [http-nio-8080-exec-7] INFO  com.course.controller.UserManger - userOld is :User(id=1, userName=tt, password=123, age=26, sex=0, permission=0, isDelete=0)
+2021-06-11 19:57:22.631 [http-nio-8080-exec-7] INFO  com.course.controller.UserManger - 登录成功------>用户是tt
+2021-06-11 19:57:22.693 [http-nio-8080-exec-9] INFO  com.course.controller.UserManger - verifyCookie方法获取到的cookie是[Ljavax.servlet.http.Cookie;@4d6205e9
+2021-06-11 19:57:22.699 [http-nio-8080-exec-9] INFO  com.course.controller.UserManger - addUser方法执行成功，插入数据条数1
+2021-06-11 19:57:22.725 [http-nio-8080-exec-1] INFO  com.course.controller.UserManger - verifyCookie方法获取到的cookie是[Ljavax.servlet.http.Cookie;@5c93eb66
+2021-06-11 19:57:22.727 [http-nio-8080-exec-1] INFO  com.course.controller.UserManger - getUserInfo查询到的用户数量是1
+2021-06-11 19:57:22.784 [http-nio-8080-exec-3] INFO  com.course.controller.UserManger - verifyCookie方法获取到的cookie是[Ljavax.servlet.http.Cookie;@43db6b01
+2021-06-11 19:57:22.787 [http-nio-8080-exec-3] INFO  com.course.controller.UserManger - getUserInfo查询到的用户数量是2
+2021-06-11 19:57:22.863 [http-nio-8080-exec-5] INFO  com.course.controller.UserManger - verifyCookie方法获取到的cookie是[Ljavax.servlet.http.Cookie;@49f1d6e9
+2021-06-11 19:57:22.868 [http-nio-8080-exec-5] INFO  com.course.controller.UserManger - 调用SQL更新用户信息成功
+2021-06-11 19:57:22.869 [http-nio-8080-exec-5] INFO  com.course.controller.UserManger - 调用SQL更新的用户是：12
+2021-06-11 19:57:22.870 [http-nio-8080-exec-5] INFO  com.course.controller.UserManger - 更新后查到的user是:User(id=12, userName=小兰9, password=111, age=19, sex=1, permission=14, isDelete=0)
+2021-06-11 19:57:22.891 [http-nio-8080-exec-7] INFO  com.course.controller.UserManger - verifyCookie方法获取到的cookie是[Ljavax.servlet.http.Cookie;@6f17a439
+2021-06-11 19:57:22.893 [http-nio-8080-exec-7] INFO  com.course.controller.UserManger - 调用SQL更新用户信息成功
+2021-06-11 19:57:22.894 [http-nio-8080-exec-7] INFO  com.course.controller.UserManger - 调用SQL更新的用户是：13
+2021-06-11 19:57:22.894 [http-nio-8080-exec-7] INFO  com.course.controller.UserManger - 更新后查到的user是:User(id=13, userName=tom, password=1221, age=26, sex=0, permission=1, isDelete=1)
+2021-06-11 20:02:57.593 [Thread-3] INFO  o.s.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@34ce8af7: startup date [Fri Jun 11 19:55:34 CST 2021]; root of context hierarchy
+2021-06-11 20:02:57.597 [Thread-3] INFO  org.springframework.context.support.DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+2021-06-11 20:02:57.598 [Thread-3] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+2021-06-11 20:02:57.600 [Thread-3] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+2021-06-11 20:02:57.605 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2021-06-11 20:02:57.626 [Thread-3] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

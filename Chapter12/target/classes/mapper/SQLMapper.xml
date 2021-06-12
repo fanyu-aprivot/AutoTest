@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.course.model">
+    <resultMap id="AddUserCaseMap" type="com.course.model.AddUserCase">
+        <id column="id" jdbcType="INTEGER" property="id" />
+        <result column="username" jdbcType="VARCHAR" property="userName" />
+        <result column="password" jdbcType="VARCHAR" property="password" />
+        <result column="age" jdbcType="VARCHAR" property="age" />
+        <result column="sex" jdbcType="VARCHAR" property="sex" />
+        <result column="permission" jdbcType="VARCHAR" property="permission" />
+        <result column="is_delete" jdbcType="VARCHAR" property="isDelete" />
+        <result column="expected" jdbcType="VARCHAR" property="expected" />
+    </resultMap>
+    <resultMap id="GetUserInfoCaseMap" type="com.course.model.GetUserInfoCase">
+        <id column="id" jdbcType="INTEGER" property="id" />
+        <result column="user_id" jdbcType="VARCHAR" property="userId" />
+        <result column="expected" jdbcType="VARCHAR" property="expected" />
+    </resultMap>
+    <resultMap id="GetUserListCaseMap" type="com.course.model.GetUserListCase">
+        <id column="id" jdbcType="INTEGER" property="id" />
+        <result column="username" jdbcType="VARCHAR" property="userName" />
+        <result column="age" jdbcType="VARCHAR" property="age" />
+        <result column="sex" jdbcType="VARCHAR" property="sex" />
+        <result column="expected" jdbcType="VARCHAR" property="expected" />
+    </resultMap>
+    <resultMap id="LoginCaseMap" type="com.course.model.LoginCase">
+        <id column="id" jdbcType="INTEGER" property="id" />
+        <result column="username" jdbcType="VARCHAR" property="userName" />
+        <result column="password" jdbcType="VARCHAR" property="password" />
+        <result column="expected" jdbcType="VARCHAR" property="expected" />
+    </resultMap>
+    <resultMap id="UpdateUserInfoCaseMap" type="com.course.model.UpdateUserInfoCase">
+        <id column="id" jdbcType="INTEGER" property="id" />
+        <result column="user_id" jdbcType="INTEGER" property="userId" />
+        <result column="username" jdbcType="VARCHAR" property="userName" />
+        <result column="sex" jdbcType="VARCHAR" property="sex" />
+        <result column="age" jdbcType="VARCHAR" property="age" />
+        <result column="permission" jdbcType="VARCHAR" property="permission" />
+        <result column="is_delete" jdbcType="VARCHAR" property="isDelete" />
+        <result column="expected" jdbcType="VARCHAR" property="expected" />
+    </resultMap>
+<!--    获取登录接口case-->
+    <select id="loginCase" parameterType="Integer" resultType="com.course.model.LoginCase">
+        select * from login_case where id=#{id}
+    </select>
+    <!--    获取添加用户接口case-->
+    <select id="addUserCase" parameterType="Integer" resultMap="AddUserCaseMap">
+        select * from add_user_case where id=#{id}
+    </select>
+    <!--    获取用户信息接口case-->
+    <select id="getUserInfoCase" parameterType="Integer" resultMap="GetUserInfoCaseMap">
+        select * from get_user_info_case where id=#{id}
+    </select>
+    <!--    获取用户列表接口case-->
+    <select id="getUserListCase" parameterType="Integer" resultMap="GetUserListCaseMap">
+        select * from get_user_list_case where id=#{id}
+    </select>
+    <!--    获取更新用户信息接口case-->
+    <select id="updateUserInfoCase" parameterType="Integer" resultMap="UpdateUserInfoCaseMap">
+        select * from update_user_info_case where id=#{id}
+    </select>
+
+</mapper>

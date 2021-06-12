@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.course.model">
+    <resultMap id="UserMap" type="com.course.model.User">
+        <id column="id" jdbcType="INTEGER" property="id" />
+        <result column="username" jdbcType="VARCHAR" property="userName" />
+        <result column="password" jdbcType="VARCHAR" property="password" />
+        <result column="age" jdbcType="VARCHAR" property="age" />
+        <result column="sex" jdbcType="VARCHAR" property="sex" />
+        <result column="permission" jdbcType="VARCHAR" property="permission" />
+        <result column="is_delete" jdbcType="VARCHAR" property="isDelete" />
+    </resultMap>
+<!--    1.登录接口所调用SQL-->
+    <select id="selectByUserName" parameterType="java.lang.String" resultMap="UserMap">
+        select * from user where username=#{userName}
+    </select>
+    <!--    2.添加用户接口所调用SQL-->
+    <insert id="addUser" parameterType="com.course.model.User">
+        insert into user(username,password,age,sex,permission,is_delete)
+        values(#{userName},#{password},#{age},#{sex},#{permission},#{isDelete})
+    </insert>
+    <!--    3.获取用户(列表)信息接口所调用SQL-->
+    <select id="getUserInfo" parameterType="com.course.model.User" resultMap="UserMap">
+        select * from user
+        <trim prefix="where" prefixOverrides="and">
+            <if test="id!=null and id!=''">
+                and id=#{id}
+            </if>
+            <if test="userName!=null and userName!=''">
+                and username=#{userName}
+            </if>
+            <if test="age!=null and age!=''">
+                and age=#{age}
+            </if>
+            <if test="sex!=null and sex!=''">
+                and sex=#{sex}
+            </if>
+            <if test="permission!=null and permission!=''">
+                and permission=#{permission}
+            </if>
+            <if test="isDelete!=null and isDelete!=''">
+                and is_delete=#{isDelete}
+            </if>
+        </trim>
+    </select>
+    <!--    4.更新/删除用户信息接口所调用SQL-->
+    <update id="updateUserInfo" parameterType="com.course.model.User">
+        update user
+        <trim prefix="set" suffixOverrides=",">
+            <if test="userName!=null and userName!=''">
+                username=#{userName},
+            </if>
+            <if test="password!=null and password!=''">
+                password=#{password},
+            </if>
+            <if test="age!=null and age!=''">
+                age=#{age},
+            </if>
+            <if test="sex!=null and sex!=''">
+                sex=#{sex},
+            </if>
+            <if test="permission!=null and permission!=''">
+                permission=#{permission},
+            </if>
+            <if test="isDelete!=null and isDelete!=''">
+                is_delete=#{isDelete},
+            </if>
+        </trim>
+        where id=#{id}
+    </update>
+</mapper>

@@ -1,0 +1,296 @@
+2021-06-10 10:03:18.583 [main] INFO  com.course.Application - Starting Application on LAPTOP-LMMPH4VI with PID 35908 (C:\Users\darli\.ssh\workspace\muke\AutoTest\Chapter13\target\classes started by darli in C:\Users\darli\.ssh\workspace\muke\AutoTest)
+2021-06-10 10:03:18.598 [main] INFO  com.course.Application - No active profile set, falling back to default profiles: default
+2021-06-10 10:03:18.629 [main] INFO  o.s.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4009e306: startup date [Thu Jun 10 10:03:18 CST 2021]; root of context hierarchy
+2021-06-10 10:03:19.270 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.course]' package. Please check your configuration.
+2021-06-10 10:03:19.457 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4e615e1e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-06-10 10:03:19.676 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2021-06-10 10:03:19.707 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-06-10 10:03:19.707 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.28
+2021-06-10 10:03:19.707 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.19] using APR version [1.6.5].
+2021-06-10 10:03:19.707 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-06-10 10:03:19.707 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-06-10 10:03:19.707 [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.1.1a  20 Nov 2018]
+2021-06-10 10:03:19.817 [localhost-startStop-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-06-10 10:03:19.817 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1188 ms
+2021-06-10 10:03:19.942 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2021-06-10 10:03:19.942 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-06-10 10:03:19.942 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-06-10 10:03:19.942 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-06-10 10:03:19.942 [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2021-06-10 10:03:20.395 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/getUserInfo],methods=[POST]}" onto public java.util.List<com.course.model.User> com.course.controller.UserManger.getUserInfo(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2021-06-10 10:03:20.395 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/addUser],methods=[POST]}" onto public java.lang.Boolean com.course.controller.UserManger.addUser(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2021-06-10 10:03:20.395 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/updateUserInfo],methods=[POST]}" onto public java.lang.Boolean com.course.controller.UserManger.updateUserInfo(javax.servlet.http.HttpServletRequest,com.course.model.User)
+2021-06-10 10:03:20.395 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v1/login],methods=[POST]}" onto public java.lang.Boolean com.course.controller.UserManger.login(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String,java.lang.String)
+2021-06-10 10:03:20.395 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2021-06-10 10:03:20.395 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2021-06-10 10:03:20.395 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2021-06-10 10:03:20.395 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2021-06-10 10:03:20.410 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-06-10 10:03:20.410 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-06-10 10:03:20.707 [main] INFO  o.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4009e306: startup date [Thu Jun 10 10:03:18 CST 2021]; root of context hierarchy
+2021-06-10 10:03:20.754 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-06-10 10:03:20.754 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-06-10 10:03:20.770 [main] INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-06-10 10:03:20.910 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2021-06-10 10:03:20.910 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2021-06-10 10:03:20.910 [main] INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2021-06-10 10:03:20.910 [main] INFO  org.springframework.context.support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2021-06-10 10:03:20.910 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-06-10 10:03:20.926 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-06-10 10:03:20.941 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-06-10 10:03:21.129 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2021-06-10 10:03:21.129 [main] INFO  com.course.Application - Started Application in 2.812 seconds (JVM running for 4.232)
+2021-06-10 10:03:38.136 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-06-10 10:03:38.136 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2021-06-10 10:03:38.152 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 16 ms
+2021-06-10 10:03:38.183 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2021-06-10 10:03:38.417 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2021-06-10 10:03:38.448 [http-nio-8080-exec-1] INFO  com.course.controller.UserManger - 登录成功------>用户是lucy
+2021-06-10 10:03:38.495 [http-nio-8080-exec-3] INFO  com.course.controller.UserManger - 此用户lucyerror不存在
+2021-06-10 10:07:56.941 [http-nio-8080-exec-7] INFO  com.course.controller.UserManger - 登录成功------>用户是lucy
+2021-06-10 10:07:56.972 [http-nio-8080-exec-4] INFO  com.course.controller.UserManger - 此用户lucyerror不存在
+2021-06-10 10:07:57.020 [http-nio-8080-exec-9] INFO  com.course.controller.UserManger - 需要登录才可进行addUser操作
+2021-06-10 10:15:06.615 [http-nio-8080-exec-1] INFO  com.course.controller.UserManger - 登录成功------>用户是lucy
+2021-06-10 10:15:06.646 [http-nio-8080-exec-3] INFO  com.course.controller.UserManger - 此用户lucyerror不存在
+2021-06-10 10:15:06.677 [http-nio-8080-exec-7] INFO  com.course.controller.UserManger - 需要登录才可进行addUser操作
+2021-06-10 10:17:14.628 [http-nio-8080-exec-4] INFO  com.course.controller.UserManger - 登录成功------>用户是lucy
+2021-06-10 10:17:14.643 [http-nio-8080-exec-9] INFO  com.course.controller.UserManger - 需要登录才可进行addUser操作
+2021-06-10 10:24:48.294 [http-nio-8080-exec-1] INFO  com.course.controller.UserManger - 登录成功------>用户是lucy
+2021-06-10 10:29:43.549 [http-nio-8080-exec-3] INFO  com.course.controller.UserManger - 登录成功------>用户是lucy
+2021-06-10 10:31:50.585 [http-nio-8080-exec-7] INFO  com.course.controller.UserManger - 登录成功------>用户是lucy
+2021-06-10 10:34:13.296 [http-nio-8080-exec-4] INFO  com.course.controller.UserManger - 登录成功------>用户是lucy
+2021-06-10 10:39:43.873 [http-nio-8080-exec-9] INFO  com.course.controller.UserManger - 登录成功------>用户是lucy
+2021-06-10 10:41:28.987 [http-nio-8080-exec-1] INFO  com.course.controller.UserManger - 登录成功------>用户是lucy
+2021-06-10 10:45:40.545 [http-nio-8080-exec-3] INFO  com.course.controller.UserManger - addUser方法执行成功，插入数据条数1
+2021-06-10 10:45:45.534 [http-nio-8080-exec-7] INFO  com.course.controller.UserManger - 登录成功------>用户是lucy
+2021-06-10 10:47:20.545 [http-nio-8080-exec-4] INFO  com.course.controller.UserManger - 登录成功------>用户是lucy
+2021-06-10 10:48:26.562 [http-nio-8080-exec-9] INFO  com.course.controller.UserManger - 登录成功------>用户是lucy
+2021-06-10 10:50:24.952 [http-nio-8080-exec-1] INFO  com.course.controller.UserManger - 登录成功------>用户是lucy
+2021-06-10 10:50:24.983 [http-nio-8080-exec-3] INFO  com.course.controller.UserManger - 需要登录才可进行addUser操作
+2021-06-10 11:15:39.026 [http-nio-8080-exec-7] INFO  com.course.controller.UserManger - 登录成功------>用户是lucy
+2021-06-10 11:17:34.714 [http-nio-8080-exec-4] INFO  com.course.controller.UserManger - 需要登录才可进行addUser操作
+2021-06-10 11:17:37.850 [http-nio-8080-exec-9] INFO  com.course.controller.UserManger - 登录成功------>用户是lucy
+2021-06-10 11:29:21.640 [http-nio-8080-exec-1] INFO  com.course.controller.UserManger - 登录成功------>用户是lucy
+2021-06-10 11:29:53.055 [http-nio-8080-exec-3] INFO  com.course.controller.UserManger - 登录成功------>用户是lucy
+2021-06-10 11:31:34.659 [http-nio-8080-exec-7] INFO  com.course.controller.UserManger - 需要登录才可进行addUser操作
+2021-06-10 11:31:37.366 [http-nio-8080-exec-4] INFO  com.course.controller.UserManger - 登录成功------>用户是lucy
+2021-06-10 11:31:37.413 [http-nio-8080-exec-9] INFO  com.course.controller.UserManger - addUser方法执行成功，插入数据条数1
+2021-06-10 11:33:23.185 [http-nio-8080-exec-1] INFO  com.course.controller.UserManger - 登录成功------>用户是lucy
+2021-06-10 11:33:23.231 [http-nio-8080-exec-3] INFO  com.course.controller.UserManger - addUser方法执行成功，插入数据条数1
+2021-06-10 11:39:32.432 [http-nio-8080-exec-7] INFO  com.course.controller.UserManger - 登录成功------>用户是lucy
+2021-06-10 11:39:32.469 [http-nio-8080-exec-4] INFO  com.course.controller.UserManger - addUser方法执行成功，插入数据条数1
+2021-06-10 11:40:49.620 [http-nio-8080-exec-9] INFO  com.course.controller.UserManger - 登录成功------>用户是lucy
+2021-06-10 11:44:21.050 [http-nio-8080-exec-1] INFO  com.course.controller.UserManger - addUser方法执行成功，插入数据条数1
+2021-06-10 11:44:24.248 [http-nio-8080-exec-3] INFO  com.course.controller.UserManger - 登录成功------>用户是lucy
+2021-06-10 11:44:39.123 [http-nio-8080-exec-7] INFO  com.course.controller.UserManger - addUser方法执行成功，插入数据条数1
+2021-06-10 11:44:42.061 [http-nio-8080-exec-4] INFO  com.course.controller.UserManger - 登录成功------>用户是lucy
+2021-06-10 11:44:42.110 [http-nio-8080-exec-9] INFO  com.course.controller.UserManger - addUser方法执行成功，插入数据条数1
+2021-06-10 11:46:02.112 [http-nio-8080-exec-1] INFO  com.course.controller.UserManger - 登录成功------>用户是lucy
+2021-06-10 11:46:02.145 [http-nio-8080-exec-3] INFO  com.course.controller.UserManger - addUser方法执行成功，插入数据条数1
+2021-06-10 11:56:55.796 [http-nio-8080-exec-7] INFO  com.course.controller.UserManger - 登录成功------>用户是lucy
+2021-06-10 11:56:55.827 [http-nio-8080-exec-4] INFO  com.course.controller.UserManger - 此用户lucyerror不存在
+2021-06-10 11:56:55.856 [http-nio-8080-exec-9] INFO  com.course.controller.UserManger - addUser方法执行成功，插入数据条数1
+2021-06-10 14:50:01.831 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h43m21s391ms118µs600ns).
+2021-06-10 14:50:50.484 [http-nio-8080-exec-1] INFO  com.course.controller.UserManger - 登录成功------>用户是lucy
+2021-06-10 14:50:50.516 [http-nio-8080-exec-3] INFO  com.course.controller.UserManger - 此用户lucyerror不存在
+2021-06-10 14:50:50.540 [http-nio-8080-exec-7] INFO  com.course.controller.UserManger - 需要登录才可进行addUser操作
+2021-06-10 14:53:04.708 [http-nio-8080-exec-4] INFO  com.course.controller.UserManger - 登录成功------>用户是lucy
+2021-06-10 14:53:04.735 [http-nio-8080-exec-9] INFO  com.course.controller.UserManger - 此用户lucyerror不存在
+2021-06-10 14:54:07.309 [http-nio-8080-exec-1] INFO  com.course.controller.UserManger - 需要登录才可进行addUser操作
+2021-06-10 14:54:10.480 [http-nio-8080-exec-3] INFO  com.course.controller.UserManger - 登录成功------>用户是lucy
+2021-06-10 14:55:49.450 [http-nio-8080-exec-7] INFO  com.course.controller.UserManger - 此用户lucyerror不存在
+2021-06-10 14:55:49.486 [http-nio-8080-exec-4] INFO  com.course.controller.UserManger - 需要登录才可进行addUser操作
+2021-06-10 14:55:53.395 [http-nio-8080-exec-9] INFO  com.course.controller.UserManger - 登录成功------>用户是lucy
+2021-06-10 14:55:53.423 [http-nio-8080-exec-1] INFO  com.course.controller.UserManger - 此用户lucyerror不存在
+2021-06-10 14:55:53.485 [http-nio-8080-exec-3] INFO  com.course.controller.UserManger - addUser方法执行成功，插入数据条数1
+2021-06-10 15:04:59.761 [http-nio-8080-exec-7] INFO  com.course.controller.UserManger - 登录成功------>用户是lucy
+2021-06-10 15:04:59.793 [http-nio-8080-exec-4] INFO  com.course.controller.UserManger - 此用户lucyerror不存在
+2021-06-10 15:04:59.832 [http-nio-8080-exec-9] INFO  com.course.controller.UserManger - addUser方法执行成功，插入数据条数1
+2021-06-10 15:07:54.896 [http-nio-8080-exec-1] INFO  com.course.controller.UserManger - 登录成功------>用户是lucy
+2021-06-10 15:07:54.924 [http-nio-8080-exec-3] INFO  com.course.controller.UserManger - 此用户lucyerror不存在
+2021-06-10 15:07:54.953 [http-nio-8080-exec-7] INFO  com.course.controller.UserManger - addUser方法执行成功，插入数据条数1
+2021-06-10 15:12:09.434 [http-nio-8080-exec-4] INFO  com.course.controller.UserManger - 登录成功------>用户是lucy
+2021-06-10 15:12:09.468 [http-nio-8080-exec-9] INFO  com.course.controller.UserManger - 此用户lucyerror不存在
+2021-06-10 15:12:09.504 [http-nio-8080-exec-1] INFO  com.course.controller.UserManger - addUser方法执行成功，插入数据条数1
+2021-06-10 15:41:23.300 [http-nio-8080-exec-3] INFO  com.course.controller.UserManger - 登录成功------>用户是lucy
+2021-06-10 15:41:23.329 [http-nio-8080-exec-7] INFO  com.course.controller.UserManger - 此用户lucyerror不存在
+2021-06-10 15:41:23.361 [http-nio-8080-exec-4] INFO  com.course.controller.UserManger - addUser方法执行成功，插入数据条数1
+2021-06-10 15:44:09.747 [http-nio-8080-exec-9] INFO  com.course.controller.UserManger - 登录成功------>用户是lucy
+2021-06-10 15:44:09.775 [http-nio-8080-exec-1] INFO  com.course.controller.UserManger - 此用户lucyerror不存在
+2021-06-10 15:44:09.809 [http-nio-8080-exec-3] INFO  com.course.controller.UserManger - addUser方法执行成功，插入数据条数1
+2021-06-10 15:50:54.710 [http-nio-8080-exec-7] INFO  com.course.controller.UserManger - 登录成功------>用户是lucy
+2021-06-10 15:50:54.739 [http-nio-8080-exec-4] INFO  com.course.controller.UserManger - 此用户lucyerror不存在
+2021-06-10 15:50:54.800 [http-nio-8080-exec-9] INFO  com.course.controller.UserManger - addUser方法执行成功，插入数据条数1
+2021-06-10 16:00:42.625 [http-nio-8080-exec-1] INFO  com.course.controller.UserManger - 登录成功------>用户是lucy
+2021-06-10 16:00:42.653 [http-nio-8080-exec-3] INFO  com.course.controller.UserManger - 此用户lucyerror不存在
+2021-06-10 16:00:42.688 [http-nio-8080-exec-7] INFO  com.course.controller.UserManger - addUser方法执行成功，插入数据条数1
+2021-06-10 16:03:19.485 [http-nio-8080-exec-4] INFO  com.course.controller.UserManger - 登录成功------>用户是lucy
+2021-06-10 16:03:19.511 [http-nio-8080-exec-9] INFO  com.course.controller.UserManger - 此用户lucyerror不存在
+2021-06-10 16:03:19.543 [http-nio-8080-exec-1] INFO  com.course.controller.UserManger - addUser方法执行成功，插入数据条数1
+2021-06-10 17:47:58.194 [http-nio-8080-exec-3] INFO  com.course.controller.UserManger - 登录成功------>用户是lucy
+2021-06-10 17:47:58.226 [http-nio-8080-exec-7] INFO  com.course.controller.UserManger - 此用户lucyerror不存在
+2021-06-10 17:47:58.265 [http-nio-8080-exec-4] INFO  com.course.controller.UserManger - addUser方法执行成功，插入数据条数1
+2021-06-10 17:47:58.358 [http-nio-8080-exec-9] INFO  com.course.controller.UserManger - 只有管理员才可进行getUserInfo操作
+2021-06-10 17:47:58.390 [http-nio-8080-exec-1] INFO  com.course.controller.UserManger - 只有管理员才可进行getUserInfo操作
+2021-06-10 17:47:58.437 [http-nio-8080-exec-3] INFO  com.course.controller.UserManger - 只有管理员才可进行updateUserInfo操作
+2021-06-10 19:15:27.128 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h18m52s387ms613µs).
+2021-06-10 19:22:16.781 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m19s568ms270µs200ns).
+2021-06-10 19:24:12.261 [http-nio-8080-exec-7] INFO  com.course.controller.UserManger - 登录成功------>用户是lucy
+2021-06-10 19:24:12.292 [http-nio-8080-exec-4] INFO  com.course.controller.UserManger - 此用户lucyerror不存在
+2021-06-10 19:24:12.322 [http-nio-8080-exec-9] INFO  com.course.controller.UserManger - addUser方法执行成功，插入数据条数1
+2021-06-10 19:24:12.404 [http-nio-8080-exec-1] INFO  com.course.controller.UserManger - 只有管理员才可进行getUserInfo操作
+2021-06-10 19:24:12.439 [http-nio-8080-exec-3] INFO  com.course.controller.UserManger - 只有管理员才可进行getUserInfo操作
+2021-06-10 19:24:12.503 [http-nio-8080-exec-7] INFO  com.course.controller.UserManger - 只有管理员才可进行updateUserInfo操作
+2021-06-10 20:32:51.614 [http-nio-8080-exec-4] INFO  com.course.controller.UserManger - 登录成功------>用户是lucy
+2021-06-10 20:32:51.660 [http-nio-8080-exec-9] INFO  com.course.controller.UserManger - 此用户lucyerror不存在
+2021-06-10 20:32:51.701 [http-nio-8080-exec-1] INFO  com.course.controller.UserManger - addUser方法执行成功，插入数据条数1
+2021-06-10 20:32:51.758 [http-nio-8080-exec-3] INFO  com.course.controller.UserManger - 只有管理员才可进行getUserInfo操作
+2021-06-10 20:32:51.820 [http-nio-8080-exec-7] INFO  com.course.controller.UserManger - 只有管理员才可进行getUserInfo操作
+2021-06-10 20:32:51.920 [http-nio-8080-exec-4] INFO  com.course.controller.UserManger - 只有管理员才可进行updateUserInfo操作
+2021-06-10 20:32:51.984 [http-nio-8080-exec-9] INFO  com.course.controller.UserManger - 只有管理员才可进行updateUserInfo操作
+2021-06-10 20:47:12.420 [http-nio-8080-exec-1] INFO  com.course.controller.UserManger - 登录成功------>用户是lucy
+2021-06-10 20:47:12.480 [http-nio-8080-exec-3] INFO  com.course.controller.UserManger - addUser方法执行成功，插入数据条数1
+2021-06-10 20:47:12.528 [http-nio-8080-exec-7] INFO  com.course.controller.UserManger - 只有管理员才可进行getUserInfo操作
+2021-06-10 20:47:12.560 [http-nio-8080-exec-4] INFO  com.course.controller.UserManger - 只有管理员才可进行getUserInfo操作
+2021-06-10 20:47:12.645 [http-nio-8080-exec-9] INFO  com.course.controller.UserManger - 只有管理员才可进行updateUserInfo操作
+2021-06-10 20:47:12.694 [http-nio-8080-exec-1] INFO  com.course.controller.UserManger - 只有管理员才可进行updateUserInfo操作
+2021-06-10 20:50:28.757 [http-nio-8080-exec-3] INFO  com.course.controller.UserManger - 登录成功------>用户是lucy
+2021-06-10 20:50:28.804 [http-nio-8080-exec-7] INFO  com.course.controller.UserManger - addUser方法执行成功，插入数据条数1
+2021-06-10 20:50:28.832 [http-nio-8080-exec-4] INFO  com.course.controller.UserManger - 只有管理员才可进行getUserInfo操作
+2021-06-10 20:50:28.862 [http-nio-8080-exec-9] INFO  com.course.controller.UserManger - 只有管理员才可进行getUserInfo操作
+2021-06-10 20:50:28.936 [http-nio-8080-exec-1] INFO  com.course.controller.UserManger - 只有管理员才可进行updateUserInfo操作
+2021-06-10 20:50:28.964 [http-nio-8080-exec-3] INFO  com.course.controller.UserManger - 只有管理员才可进行updateUserInfo操作
+2021-06-10 20:56:57.375 [http-nio-8080-exec-7] INFO  com.course.controller.UserManger - 登录成功------>用户是lucy
+2021-06-10 20:56:57.416 [http-nio-8080-exec-4] INFO  com.course.controller.UserManger - addUser方法执行成功，插入数据条数1
+2021-06-10 20:56:57.430 [http-nio-8080-exec-9] INFO  com.course.controller.UserManger - 只有管理员才可进行getUserInfo操作
+2021-06-10 20:56:57.464 [http-nio-8080-exec-1] INFO  com.course.controller.UserManger - 只有管理员才可进行getUserInfo操作
+2021-06-10 20:56:57.522 [http-nio-8080-exec-3] INFO  com.course.controller.UserManger - 只有管理员才可进行updateUserInfo操作
+2021-06-10 20:56:57.555 [http-nio-8080-exec-7] INFO  com.course.controller.UserManger - 只有管理员才可进行updateUserInfo操作
+2021-06-10 21:05:50.635 [http-nio-8080-exec-4] INFO  com.course.controller.UserManger - 登录成功------>用户是lucy
+2021-06-10 21:05:50.686 [http-nio-8080-exec-9] INFO  com.course.controller.UserManger - 只有管理员才可进行getUserInfo操作
+2021-06-10 21:05:50.710 [http-nio-8080-exec-1] INFO  com.course.controller.UserManger - 只有管理员才可进行getUserInfo操作
+2021-06-10 21:05:50.756 [http-nio-8080-exec-3] INFO  com.course.controller.UserManger - 只有管理员才可进行updateUserInfo操作
+2021-06-10 21:05:50.790 [http-nio-8080-exec-7] INFO  com.course.controller.UserManger - 只有管理员才可进行updateUserInfo操作
+2021-06-10 21:07:17.520 [http-nio-8080-exec-4] INFO  com.course.controller.UserManger - 登录成功------>用户是lucy
+2021-06-10 21:07:17.547 [http-nio-8080-exec-9] INFO  com.course.controller.UserManger - 只有管理员才可进行getUserInfo操作
+2021-06-10 21:07:17.593 [http-nio-8080-exec-1] INFO  com.course.controller.UserManger - 只有管理员才可进行getUserInfo操作
+2021-06-10 21:07:17.638 [http-nio-8080-exec-3] INFO  com.course.controller.UserManger - 只有管理员才可进行updateUserInfo操作
+2021-06-10 21:07:17.673 [http-nio-8080-exec-7] INFO  com.course.controller.UserManger - 只有管理员才可进行updateUserInfo操作
+2021-06-10 21:10:26.766 [http-nio-8080-exec-4] INFO  com.course.controller.UserManger - 登录成功------>用户是lucy
+2021-06-10 21:10:26.795 [http-nio-8080-exec-9] INFO  com.course.controller.UserManger - 只有管理员才可进行getUserInfo操作
+2021-06-10 21:10:26.818 [http-nio-8080-exec-1] INFO  com.course.controller.UserManger - 只有管理员才可进行getUserInfo操作
+2021-06-10 21:10:26.863 [http-nio-8080-exec-3] INFO  com.course.controller.UserManger - 只有管理员才可进行updateUserInfo操作
+2021-06-10 21:10:26.917 [http-nio-8080-exec-7] INFO  com.course.controller.UserManger - 只有管理员才可进行updateUserInfo操作
+2021-06-10 21:16:21.287 [http-nio-8080-exec-4] INFO  com.course.controller.UserManger - 登录成功------>用户是tt
+2021-06-10 21:16:21.343 [http-nio-8080-exec-9] INFO  com.course.controller.UserManger - getUserInfo查询到的用户数量是1
+2021-06-10 21:16:21.399 [http-nio-8080-exec-1] INFO  com.course.controller.UserManger - getUserInfo查询到的用户数量是1
+2021-06-10 21:16:21.457 [http-nio-8080-exec-3] INFO  com.course.controller.UserManger - 调用SQL更新用户信息成功
+2021-06-10 21:16:21.518 [http-nio-8080-exec-7] INFO  com.course.controller.UserManger - 调用SQL更新用户信息成功
+2021-06-10 21:21:39.606 [http-nio-8080-exec-4] INFO  com.course.controller.UserManger - 登录成功------>用户是tt
+2021-06-10 21:21:39.637 [http-nio-8080-exec-9] INFO  com.course.controller.UserManger - getUserInfo查询到的用户数量是1
+2021-06-10 21:21:39.670 [http-nio-8080-exec-1] INFO  com.course.controller.UserManger - getUserInfo查询到的用户数量是1
+2021-06-10 21:21:39.711 [http-nio-8080-exec-3] INFO  com.course.controller.UserManger - 调用SQL更新用户信息成功
+2021-06-10 21:21:39.767 [http-nio-8080-exec-7] INFO  com.course.controller.UserManger - 调用SQL更新用户信息成功
+2021-06-10 21:25:41.512 [http-nio-8080-exec-4] INFO  com.course.controller.UserManger - 登录成功------>用户是tt
+2021-06-10 21:25:41.546 [http-nio-8080-exec-9] INFO  com.course.controller.UserManger - getUserInfo查询到的用户数量是1
+2021-06-10 21:25:41.576 [http-nio-8080-exec-1] INFO  com.course.controller.UserManger - getUserInfo查询到的用户数量是1
+2021-06-10 21:25:41.626 [http-nio-8080-exec-3] INFO  com.course.controller.UserManger - 调用SQL更新用户信息成功
+2021-06-10 21:25:41.656 [http-nio-8080-exec-7] INFO  com.course.controller.UserManger - 调用SQL更新用户信息成功
+2021-06-10 21:27:10.529 [http-nio-8080-exec-4] INFO  com.course.controller.UserManger - 登录成功------>用户是tt
+2021-06-10 21:27:10.557 [http-nio-8080-exec-9] INFO  com.course.controller.UserManger - getUserInfo查询到的用户数量是1
+2021-06-10 21:27:10.584 [http-nio-8080-exec-1] INFO  com.course.controller.UserManger - getUserInfo查询到的用户数量是1
+2021-06-10 21:27:10.625 [http-nio-8080-exec-3] INFO  com.course.controller.UserManger - 调用SQL更新用户信息成功
+2021-06-10 21:27:10.657 [http-nio-8080-exec-7] INFO  com.course.controller.UserManger - 调用SQL更新用户信息成功
+2021-06-10 21:28:44.201 [http-nio-8080-exec-4] INFO  com.course.controller.UserManger - 登录成功------>用户是tt
+2021-06-10 21:28:44.227 [http-nio-8080-exec-9] INFO  com.course.controller.UserManger - getUserInfo查询到的用户数量是1
+2021-06-10 21:28:44.290 [http-nio-8080-exec-1] INFO  com.course.controller.UserManger - getUserInfo查询到的用户数量是1
+2021-06-10 21:28:44.334 [http-nio-8080-exec-3] INFO  com.course.controller.UserManger - 调用SQL更新用户信息成功
+2021-06-10 21:28:44.395 [http-nio-8080-exec-7] INFO  com.course.controller.UserManger - 调用SQL更新用户信息成功
+2021-06-10 21:30:33.505 [http-nio-8080-exec-4] INFO  com.course.controller.UserManger - 登录成功------>用户是tt
+2021-06-10 21:30:33.533 [http-nio-8080-exec-9] INFO  com.course.controller.UserManger - getUserInfo查询到的用户数量是1
+2021-06-10 21:30:33.553 [http-nio-8080-exec-1] INFO  com.course.controller.UserManger - getUserInfo查询到的用户数量是1
+2021-06-10 21:30:33.610 [http-nio-8080-exec-3] INFO  com.course.controller.UserManger - 调用SQL更新用户信息成功
+2021-06-10 21:30:33.625 [http-nio-8080-exec-7] INFO  com.course.controller.UserManger - 调用SQL更新用户信息成功
+2021-06-10 21:31:29.683 [http-nio-8080-exec-4] INFO  com.course.controller.UserManger - 登录成功------>用户是tt
+2021-06-10 21:31:29.719 [http-nio-8080-exec-9] INFO  com.course.controller.UserManger - getUserInfo查询到的用户数量是1
+2021-06-10 21:31:29.766 [http-nio-8080-exec-1] INFO  com.course.controller.UserManger - getUserInfo查询到的用户数量是1
+2021-06-10 21:31:29.807 [http-nio-8080-exec-3] INFO  com.course.controller.UserManger - 调用SQL更新用户信息成功
+2021-06-10 21:31:29.849 [http-nio-8080-exec-7] INFO  com.course.controller.UserManger - 调用SQL更新用户信息成功
+2021-06-10 21:35:17.040 [http-nio-8080-exec-4] INFO  com.course.controller.UserManger - 登录成功------>用户是tt
+2021-06-10 21:35:17.069 [http-nio-8080-exec-9] INFO  com.course.controller.UserManger - getUserInfo查询到的用户数量是1
+2021-06-10 21:35:17.222 [http-nio-8080-exec-1] INFO  com.course.controller.UserManger - getUserInfo查询到的用户数量是1
+2021-06-10 21:35:17.309 [http-nio-8080-exec-3] INFO  com.course.controller.UserManger - 调用SQL更新用户信息成功
+2021-06-10 21:35:17.348 [http-nio-8080-exec-7] INFO  com.course.controller.UserManger - 调用SQL更新用户信息成功
+2021-06-10 21:36:42.939 [http-nio-8080-exec-4] INFO  com.course.controller.UserManger - 登录成功------>用户是tt
+2021-06-10 21:36:42.972 [http-nio-8080-exec-9] INFO  com.course.controller.UserManger - getUserInfo查询到的用户数量是1
+2021-06-10 21:38:35.671 [http-nio-8080-exec-1] INFO  com.course.controller.UserManger - 登录成功------>用户是tt
+2021-06-10 21:38:35.705 [http-nio-8080-exec-3] INFO  com.course.controller.UserManger - getUserInfo查询到的用户数量是1
+2021-06-10 21:38:35.823 [http-nio-8080-exec-7] INFO  com.course.controller.UserManger - getUserInfo查询到的用户数量是1
+2021-06-10 21:38:35.900 [http-nio-8080-exec-4] INFO  com.course.controller.UserManger - 调用SQL更新用户信息成功
+2021-06-10 21:38:35.945 [http-nio-8080-exec-9] INFO  com.course.controller.UserManger - 调用SQL更新用户信息成功
+2021-06-10 21:45:20.989 [http-nio-8080-exec-1] INFO  com.course.controller.UserManger - 登录成功------>用户是tt
+2021-06-10 21:45:21.019 [http-nio-8080-exec-3] INFO  com.course.controller.UserManger - getUserInfo查询到的用户数量是1
+2021-06-10 21:45:21.114 [http-nio-8080-exec-7] INFO  com.course.controller.UserManger - getUserInfo查询到的用户数量是1
+2021-06-10 21:45:21.150 [http-nio-8080-exec-4] INFO  com.course.controller.UserManger - 调用SQL更新用户信息成功
+2021-06-10 21:45:21.200 [http-nio-8080-exec-9] INFO  com.course.controller.UserManger - 调用SQL更新用户信息成功
+2021-06-10 21:46:44.067 [http-nio-8080-exec-1] INFO  com.course.controller.UserManger - 登录成功------>用户是tt
+2021-06-10 21:46:44.098 [http-nio-8080-exec-3] INFO  com.course.controller.UserManger - getUserInfo查询到的用户数量是1
+2021-06-10 21:46:44.197 [http-nio-8080-exec-7] INFO  com.course.controller.UserManger - getUserInfo查询到的用户数量是1
+2021-06-10 21:46:44.234 [http-nio-8080-exec-4] INFO  com.course.controller.UserManger - 调用SQL更新用户信息成功
+2021-06-10 21:46:44.289 [http-nio-8080-exec-9] INFO  com.course.controller.UserManger - 调用SQL更新用户信息成功
+2021-06-10 21:52:26.594 [http-nio-8080-exec-1] INFO  com.course.controller.UserManger - 登录成功------>用户是tt
+2021-06-10 21:52:26.633 [http-nio-8080-exec-3] INFO  com.course.controller.UserManger - getUserInfo查询到的用户数量是1
+2021-06-10 21:52:26.658 [http-nio-8080-exec-7] INFO  com.course.controller.UserManger - getUserInfo查询到的用户数量是1
+2021-06-10 21:52:26.707 [http-nio-8080-exec-4] INFO  com.course.controller.UserManger - 调用SQL更新用户信息成功
+2021-06-10 21:52:26.739 [http-nio-8080-exec-9] INFO  com.course.controller.UserManger - 调用SQL更新用户信息成功
+2021-06-10 21:52:48.711 [http-nio-8080-exec-1] INFO  com.course.controller.UserManger - 登录成功------>用户是tt
+2021-06-10 21:52:48.739 [http-nio-8080-exec-3] INFO  com.course.controller.UserManger - getUserInfo查询到的用户数量是1
+2021-06-10 21:52:48.829 [http-nio-8080-exec-7] INFO  com.course.controller.UserManger - getUserInfo查询到的用户数量是1
+2021-06-10 21:52:48.894 [http-nio-8080-exec-4] INFO  com.course.controller.UserManger - 调用SQL更新用户信息成功
+2021-06-10 21:52:48.916 [http-nio-8080-exec-9] INFO  com.course.controller.UserManger - 调用SQL更新用户信息成功
+2021-06-10 21:54:39.102 [http-nio-8080-exec-1] INFO  com.course.controller.UserManger - 登录成功------>用户是tt
+2021-06-10 21:54:39.130 [http-nio-8080-exec-3] INFO  com.course.controller.UserManger - getUserInfo查询到的用户数量是1
+2021-06-10 21:54:39.150 [http-nio-8080-exec-7] INFO  com.course.controller.UserManger - getUserInfo查询到的用户数量是1
+2021-06-10 21:54:39.193 [http-nio-8080-exec-4] INFO  com.course.controller.UserManger - 调用SQL更新用户信息成功
+2021-06-10 21:54:39.213 [http-nio-8080-exec-9] INFO  com.course.controller.UserManger - 调用SQL更新用户信息成功
+2021-06-10 21:55:49.405 [http-nio-8080-exec-1] INFO  com.course.controller.UserManger - 登录成功------>用户是tt
+2021-06-10 21:55:49.436 [http-nio-8080-exec-3] INFO  com.course.controller.UserManger - getUserInfo查询到的用户数量是1
+2021-06-10 21:55:49.481 [http-nio-8080-exec-7] INFO  com.course.controller.UserManger - getUserInfo查询到的用户数量是1
+2021-06-10 21:55:49.519 [http-nio-8080-exec-4] INFO  com.course.controller.UserManger - 调用SQL更新用户信息成功
+2021-06-10 21:55:49.549 [http-nio-8080-exec-9] INFO  com.course.controller.UserManger - 调用SQL更新用户信息成功
+2021-06-10 21:59:39.548 [http-nio-8080-exec-1] INFO  com.course.controller.UserManger - 登录成功------>用户是tt
+2021-06-10 21:59:39.577 [http-nio-8080-exec-3] INFO  com.course.controller.UserManger - getUserInfo查询到的用户数量是1
+2021-06-10 21:59:39.680 [http-nio-8080-exec-7] INFO  com.course.controller.UserManger - getUserInfo查询到的用户数量是1
+2021-06-10 21:59:39.718 [http-nio-8080-exec-4] INFO  com.course.controller.UserManger - 调用SQL更新用户信息成功
+2021-06-10 21:59:39.740 [http-nio-8080-exec-9] INFO  com.course.controller.UserManger - 调用SQL更新用户信息成功
+2021-06-10 22:00:37.294 [http-nio-8080-exec-1] INFO  com.course.controller.UserManger - 登录成功------>用户是tt
+2021-06-10 22:00:37.323 [http-nio-8080-exec-3] INFO  com.course.controller.UserManger - getUserInfo查询到的用户数量是1
+2021-06-10 22:00:37.410 [http-nio-8080-exec-7] INFO  com.course.controller.UserManger - getUserInfo查询到的用户数量是1
+2021-06-10 22:00:37.477 [http-nio-8080-exec-4] INFO  com.course.controller.UserManger - 调用SQL更新用户信息成功
+2021-06-10 22:00:37.508 [http-nio-8080-exec-9] INFO  com.course.controller.UserManger - 调用SQL更新用户信息成功
+2021-06-10 22:01:32.661 [http-nio-8080-exec-1] INFO  com.course.controller.UserManger - 登录成功------>用户是tt
+2021-06-10 22:01:32.689 [http-nio-8080-exec-3] INFO  com.course.controller.UserManger - getUserInfo查询到的用户数量是1
+2021-06-10 22:01:32.785 [http-nio-8080-exec-7] INFO  com.course.controller.UserManger - getUserInfo查询到的用户数量是1
+2021-06-10 22:01:32.849 [http-nio-8080-exec-4] INFO  com.course.controller.UserManger - 调用SQL更新用户信息成功
+2021-06-10 22:01:32.870 [http-nio-8080-exec-9] INFO  com.course.controller.UserManger - 调用SQL更新用户信息成功
+2021-06-10 22:35:52.525 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=29m2s473ms570µs200ns).
+2021-06-10 22:55:53.490 [http-nio-8080-exec-1] INFO  com.course.controller.UserManger - 登录成功------>用户是tt
+2021-06-10 22:55:53.580 [http-nio-8080-exec-3] INFO  com.course.controller.UserManger - getUserInfo查询到的用户数量是1
+2021-06-10 22:55:53.626 [http-nio-8080-exec-7] INFO  com.course.controller.UserManger - getUserInfo查询到的用户数量是1
+2021-06-10 22:55:53.699 [http-nio-8080-exec-4] INFO  com.course.controller.UserManger - 调用SQL更新用户信息成功
+2021-06-10 22:55:53.733 [http-nio-8080-exec-9] INFO  com.course.controller.UserManger - 调用SQL更新用户信息成功
+2021-06-10 22:58:28.832 [http-nio-8080-exec-1] INFO  com.course.controller.UserManger - 登录成功------>用户是tt
+2021-06-10 22:58:28.901 [http-nio-8080-exec-3] INFO  com.course.controller.UserManger - getUserInfo查询到的用户数量是1
+2021-06-10 22:58:28.952 [http-nio-8080-exec-7] INFO  com.course.controller.UserManger - getUserInfo查询到的用户数量是1
+2021-06-10 22:58:28.989 [http-nio-8080-exec-4] INFO  com.course.controller.UserManger - 调用SQL更新用户信息成功
+2021-06-10 22:58:29.031 [http-nio-8080-exec-9] INFO  com.course.controller.UserManger - 调用SQL更新用户信息成功
+2021-06-10 23:04:17.684 [http-nio-8080-exec-1] INFO  com.course.controller.UserManger - 登录成功------>用户是tt
+2021-06-10 23:04:17.749 [http-nio-8080-exec-3] INFO  com.course.controller.UserManger - getUserInfo查询到的用户数量是1
+2021-06-10 23:04:17.797 [http-nio-8080-exec-7] INFO  com.course.controller.UserManger - getUserInfo查询到的用户数量是1
+2021-06-10 23:04:17.839 [http-nio-8080-exec-4] INFO  com.course.controller.UserManger - 调用SQL更新用户信息成功
+2021-06-10 23:04:17.859 [http-nio-8080-exec-9] INFO  com.course.controller.UserManger - 调用SQL更新用户信息成功
+2021-06-10 23:08:01.343 [http-nio-8080-exec-1] INFO  com.course.controller.UserManger - 登录成功------>用户是tt
+2021-06-10 23:08:01.407 [http-nio-8080-exec-3] INFO  com.course.controller.UserManger - getUserInfo查询到的用户数量是1
+2021-06-10 23:08:01.492 [http-nio-8080-exec-7] INFO  com.course.controller.UserManger - getUserInfo查询到的用户数量是1
+2021-06-10 23:08:01.556 [http-nio-8080-exec-4] INFO  com.course.controller.UserManger - 调用SQL更新用户信息成功
+2021-06-10 23:08:01.593 [http-nio-8080-exec-9] INFO  com.course.controller.UserManger - 调用SQL更新用户信息成功
