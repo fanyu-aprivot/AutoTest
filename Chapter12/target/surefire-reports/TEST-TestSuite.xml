@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="7" failures="1" name="TestSuite" time="2.605" errors="0" skipped="0">
+<testsuite tests="7" failures="1" name="TestSuite" time="2.428" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="D:\D1\java\jdk\jdk1.8.0_45\jre\bin"/>
@@ -20,7 +20,7 @@
     <property name="basedir" value="C:\Users\darli\.ssh\workspace\muke\AutoTest\Chapter12"/>
     <property name="java.endorsed.dirs" value="D:\D1\java\jdk\jdk1.8.0_45\jre\lib\endorsed"/>
     <property name="os.arch" value="amd64"/>
-    <property name="surefire.real.class.path" value="C:\Users\darli\.ssh\workspace\muke\AutoTest\Chapter12\target\surefire\surefirebooter9016585925976923126.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\darli\.ssh\workspace\muke\AutoTest\Chapter12\target\surefire\surefirebooter180161326942403506.jar"/>
     <property name="java.io.tmpdir" value="C:\Users\darli\AppData\Local\Temp\"/>
     <property name="line.separator" value="
 "/>
@@ -44,7 +44,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="D:\D1\java\jdk\jdk1.8.0_45\jre"/>
-    <property name="sun.java.command" value="C:\Users\darli\.ssh\workspace\muke\AutoTest\Chapter12\target\surefire\surefirebooter9016585925976923126.jar C:\Users\darli\.ssh\workspace\muke\AutoTest\Chapter12\target\surefire\surefire1820931799687668841tmp C:\Users\darli\.ssh\workspace\muke\AutoTest\Chapter12\target\surefire\surefire2233467974502898558tmp"/>
+    <property name="sun.java.command" value="C:\Users\darli\.ssh\workspace\muke\AutoTest\Chapter12\target\surefire\surefirebooter180161326942403506.jar C:\Users\darli\.ssh\workspace\muke\AutoTest\Chapter12\target\surefire\surefire397511744612437388tmp C:\Users\darli\.ssh\workspace\muke\AutoTest\Chapter12\target\surefire\surefire4594212467872969913tmp"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="zh"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -61,88 +61,88 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.course.cases.LoginTest" name="loginFalse" time="0.614"/>
-  <testcase classname="com.course.cases.LoginTest" name="loginTrue" time="0.02"/>
-  <testcase classname="com.course.cases.AddUserTest" name="addUser" time="0.093">
-    <failure message="Expected one result (or null) to be returned by selectOne(), but found: 3" type="org.apache.ibatis.exceptions.TooManyResultsException">org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 3
+  <testcase classname="com.course.cases.LoginTest" name="loginFalse" time="0.534"/>
+  <testcase classname="com.course.cases.LoginTest" name="loginTrue" time="0.017"/>
+  <testcase classname="com.course.cases.AddUserTest" name="addUser" time="0.094">
+    <failure message="Expected one result (or null) to be returned by selectOne(), but found: 2" type="org.apache.ibatis.exceptions.TooManyResultsException">org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 2
 	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:81)
 	at com.course.cases.AddUserTest.addUser(AddUserTest.java:55)
 </failure>
-    <system-out>09:44:00.717 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
-09:44:00.722 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 454884231.
-09:44:00.722 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1b1cfb87]
-09:44:00.722 [main] DEBUG com.course.model.addUserCase - ==&gt;  Preparing: select * from add_user_case where id=? 
-09:44:00.723 [main] DEBUG com.course.model.addUserCase - ==&gt; Parameters: 2(Integer)
-09:44:00.725 [main] DEBUG com.course.model.addUserCase - &lt;==      Total: 1
-09:44:00.725 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1b1cfb87]
-09:44:00.725 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1b1cfb87]
-09:44:00.726 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 454884231 to pool.
+    <system-out>10:40:21.659 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+10:40:21.663 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 454884231.
+10:40:21.663 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1b1cfb87]
+10:40:21.663 [main] DEBUG com.course.model.addUserCase - ==&gt;  Preparing: select * from add_user_case where id=? 
+10:40:21.663 [main] DEBUG com.course.model.addUserCase - ==&gt; Parameters: 2(Integer)
+10:40:21.665 [main] DEBUG com.course.model.addUserCase - &lt;==      Total: 1
+10:40:21.665 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1b1cfb87]
+10:40:21.665 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1b1cfb87]
+10:40:21.666 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 454884231 to pool.
 AddUserCase(id=2, userName=test4, password=444, age=4, sex=0, permission=0, isDelete=0, expected=true)
-http://localhost:8080/v1/addUser
-09:44:00.726 [main] INFO com.course.cases.AddUserTest - ********开始验证addUser api*********
-09:44:00.783 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
-09:44:00.784 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: JSESSIONID][value: 41A3E64AA64EB026C8ECED5898978333][domain: localhost][path: /][expiry: null] match [localhost:8080/v1/addUser]
-09:44:00.784 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: login][value: true][domain: localhost][path: /v1][expiry: null] match [localhost:8080/v1/addUser]
-09:44:00.784 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
-09:44:00.784 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}-&gt;http://localhost:8080][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
-09:44:00.784 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 2][route: {}-&gt;http://localhost:8080][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
-09:44:00.784 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {}-&gt;http://localhost:8080
-09:44:00.784 [main] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to localhost/127.0.0.1:8080
-09:44:00.785 [main] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connection established 127.0.0.1:52805&lt;-&gt;127.0.0.1:8080
-09:44:00.785 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Executing request POST /v1/addUser HTTP/1.1
-09:44:00.785 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
-09:44:00.785 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
-09:44:00.785 [main] DEBUG org.apache.http.headers - http-outgoing-2 &gt;&gt; POST /v1/addUser HTTP/1.1
-09:44:00.785 [main] DEBUG org.apache.http.headers - http-outgoing-2 &gt;&gt; content-type: application/json
-09:44:00.785 [main] DEBUG org.apache.http.headers - http-outgoing-2 &gt;&gt; Content-Length: 89
-09:44:00.785 [main] DEBUG org.apache.http.headers - http-outgoing-2 &gt;&gt; Host: localhost:8080
-09:44:00.785 [main] DEBUG org.apache.http.headers - http-outgoing-2 &gt;&gt; Connection: Keep-Alive
-09:44:00.785 [main] DEBUG org.apache.http.headers - http-outgoing-2 &gt;&gt; User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_45)
-09:44:00.785 [main] DEBUG org.apache.http.headers - http-outgoing-2 &gt;&gt; Cookie: JSESSIONID=41A3E64AA64EB026C8ECED5898978333; login=true
-09:44:00.785 [main] DEBUG org.apache.http.headers - http-outgoing-2 &gt;&gt; Accept-Encoding: gzip,deflate
-09:44:00.786 [main] DEBUG org.apache.http.wire - http-outgoing-2 &gt;&gt; &quot;POST /v1/addUser HTTP/1.1[\r][\n]&quot;
-09:44:00.786 [main] DEBUG org.apache.http.wire - http-outgoing-2 &gt;&gt; &quot;content-type: application/json[\r][\n]&quot;
-09:44:00.786 [main] DEBUG org.apache.http.wire - http-outgoing-2 &gt;&gt; &quot;Content-Length: 89[\r][\n]&quot;
-09:44:00.786 [main] DEBUG org.apache.http.wire - http-outgoing-2 &gt;&gt; &quot;Host: localhost:8080[\r][\n]&quot;
-09:44:00.786 [main] DEBUG org.apache.http.wire - http-outgoing-2 &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
-09:44:00.786 [main] DEBUG org.apache.http.wire - http-outgoing-2 &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_45)[\r][\n]&quot;
-09:44:00.786 [main] DEBUG org.apache.http.wire - http-outgoing-2 &gt;&gt; &quot;Cookie: JSESSIONID=41A3E64AA64EB026C8ECED5898978333; login=true[\r][\n]&quot;
-09:44:00.786 [main] DEBUG org.apache.http.wire - http-outgoing-2 &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
-09:44:00.786 [main] DEBUG org.apache.http.wire - http-outgoing-2 &gt;&gt; &quot;[\r][\n]&quot;
-09:44:00.786 [main] DEBUG org.apache.http.wire - http-outgoing-2 &gt;&gt; &quot;{&quot;password&quot;:&quot;444&quot;,&quot;isDelete&quot;:&quot;0&quot;,&quot;sex&quot;:&quot;0&quot;,&quot;permission&quot;:&quot;0&quot;,&quot;userName&quot;:&quot;test4&quot;,&quot;age&quot;:&quot;4&quot;}&quot;
-09:44:00.802 [main] DEBUG org.apache.http.wire - http-outgoing-2 &lt;&lt; &quot;HTTP/1.1 200 [\r][\n]&quot;
-09:44:00.802 [main] DEBUG org.apache.http.wire - http-outgoing-2 &lt;&lt; &quot;Content-Type: application/json;charset=UTF-8[\r][\n]&quot;
-09:44:00.802 [main] DEBUG org.apache.http.wire - http-outgoing-2 &lt;&lt; &quot;Transfer-Encoding: chunked[\r][\n]&quot;
-09:44:00.802 [main] DEBUG org.apache.http.wire - http-outgoing-2 &lt;&lt; &quot;Date: Sun, 13 Jun 2021 01:44:00 GMT[\r][\n]&quot;
-09:44:00.802 [main] DEBUG org.apache.http.wire - http-outgoing-2 &lt;&lt; &quot;[\r][\n]&quot;
-09:44:00.802 [main] DEBUG org.apache.http.wire - http-outgoing-2 &lt;&lt; &quot;4[\r][\n]&quot;
-09:44:00.802 [main] DEBUG org.apache.http.wire - http-outgoing-2 &lt;&lt; &quot;true[\r][\n]&quot;
-09:44:00.802 [main] DEBUG org.apache.http.headers - http-outgoing-2 &lt;&lt; HTTP/1.1 200 
-09:44:00.802 [main] DEBUG org.apache.http.headers - http-outgoing-2 &lt;&lt; Content-Type: application/json;charset=UTF-8
-09:44:00.802 [main] DEBUG org.apache.http.headers - http-outgoing-2 &lt;&lt; Transfer-Encoding: chunked
-09:44:00.802 [main] DEBUG org.apache.http.headers - http-outgoing-2 &lt;&lt; Date: Sun, 13 Jun 2021 01:44:00 GMT
-09:44:00.802 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
-09:44:00.803 [main] DEBUG org.apache.http.wire - http-outgoing-2 &lt;&lt; &quot;0[\r][\n]&quot;
-09:44:00.803 [main] DEBUG org.apache.http.wire - http-outgoing-2 &lt;&lt; &quot;[\r][\n]&quot;
-09:44:00.803 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 2][route: {}-&gt;http://localhost:8080] can be kept alive indefinitely
-09:44:00.803 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 2][route: {}-&gt;http://localhost:8080][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
-09:44:00.803 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager is shutting down
-09:44:00.803 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-2: Close connection
-09:44:00.803 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager shut down
-09:44:00.803 [main] INFO com.course.cases.AddUserTest - 请求http:localhost/v1/addUser的结果是------&gt;true
-09:44:00.803 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
-09:44:00.803 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 454884231 from pool.
-09:44:00.803 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1b1cfb87]
-09:44:00.804 [main] DEBUG com.course.model.getAddedUser - ==&gt;  Preparing: select * from user where username=? and password=? and age=? and sex=? and permission=? and is_delete=? 
-09:44:00.804 [main] DEBUG com.course.model.getAddedUser - ==&gt; Parameters: test4(String), 444(String), 4(String), 0(String), 0(String), 0(String)
-09:44:00.806 [main] DEBUG com.course.model.getAddedUser - &lt;==      Total: 3
-09:44:00.806 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1b1cfb87]
-09:44:00.807 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1b1cfb87]
-09:44:00.807 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 454884231 to pool.
+http://192.168.159.1:8080/v1/addUser
+10:40:21.666 [main] INFO com.course.cases.AddUserTest - ********开始验证addUser api*********
+10:40:21.717 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+10:40:21.734 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: JSESSIONID][value: 77134C54C306CFFA1A0C64AEA1B53305][domain: 192.168.159.1][path: /][expiry: null] match [192.168.159.1:8080/v1/addUser]
+10:40:21.734 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - Cookie [version: 0][name: login][value: true][domain: 192.168.159.1][path: /v1][expiry: null] match [192.168.159.1:8080/v1/addUser]
+10:40:21.735 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+10:40:21.735 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}-&gt;http://192.168.159.1:8080][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+10:40:21.735 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 2][route: {}-&gt;http://192.168.159.1:8080][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+10:40:21.735 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {}-&gt;http://192.168.159.1:8080
+10:40:21.735 [main] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to /192.168.159.1:8080
+10:40:21.735 [main] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connection established 192.168.159.1:49675&lt;-&gt;192.168.159.1:8080
+10:40:21.735 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Executing request POST /v1/addUser HTTP/1.1
+10:40:21.735 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Target auth state: UNCHALLENGED
+10:40:21.735 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Proxy auth state: UNCHALLENGED
+10:40:21.736 [main] DEBUG org.apache.http.headers - http-outgoing-2 &gt;&gt; POST /v1/addUser HTTP/1.1
+10:40:21.736 [main] DEBUG org.apache.http.headers - http-outgoing-2 &gt;&gt; content-type: application/json
+10:40:21.736 [main] DEBUG org.apache.http.headers - http-outgoing-2 &gt;&gt; Content-Length: 89
+10:40:21.736 [main] DEBUG org.apache.http.headers - http-outgoing-2 &gt;&gt; Host: 192.168.159.1:8080
+10:40:21.736 [main] DEBUG org.apache.http.headers - http-outgoing-2 &gt;&gt; Connection: Keep-Alive
+10:40:21.736 [main] DEBUG org.apache.http.headers - http-outgoing-2 &gt;&gt; User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_45)
+10:40:21.736 [main] DEBUG org.apache.http.headers - http-outgoing-2 &gt;&gt; Cookie: JSESSIONID=77134C54C306CFFA1A0C64AEA1B53305; login=true
+10:40:21.736 [main] DEBUG org.apache.http.headers - http-outgoing-2 &gt;&gt; Accept-Encoding: gzip,deflate
+10:40:21.736 [main] DEBUG org.apache.http.wire - http-outgoing-2 &gt;&gt; &quot;POST /v1/addUser HTTP/1.1[\r][\n]&quot;
+10:40:21.736 [main] DEBUG org.apache.http.wire - http-outgoing-2 &gt;&gt; &quot;content-type: application/json[\r][\n]&quot;
+10:40:21.736 [main] DEBUG org.apache.http.wire - http-outgoing-2 &gt;&gt; &quot;Content-Length: 89[\r][\n]&quot;
+10:40:21.736 [main] DEBUG org.apache.http.wire - http-outgoing-2 &gt;&gt; &quot;Host: 192.168.159.1:8080[\r][\n]&quot;
+10:40:21.736 [main] DEBUG org.apache.http.wire - http-outgoing-2 &gt;&gt; &quot;Connection: Keep-Alive[\r][\n]&quot;
+10:40:21.736 [main] DEBUG org.apache.http.wire - http-outgoing-2 &gt;&gt; &quot;User-Agent: Apache-HttpClient/4.5.2 (Java/1.8.0_45)[\r][\n]&quot;
+10:40:21.736 [main] DEBUG org.apache.http.wire - http-outgoing-2 &gt;&gt; &quot;Cookie: JSESSIONID=77134C54C306CFFA1A0C64AEA1B53305; login=true[\r][\n]&quot;
+10:40:21.736 [main] DEBUG org.apache.http.wire - http-outgoing-2 &gt;&gt; &quot;Accept-Encoding: gzip,deflate[\r][\n]&quot;
+10:40:21.736 [main] DEBUG org.apache.http.wire - http-outgoing-2 &gt;&gt; &quot;[\r][\n]&quot;
+10:40:21.736 [main] DEBUG org.apache.http.wire - http-outgoing-2 &gt;&gt; &quot;{&quot;password&quot;:&quot;444&quot;,&quot;isDelete&quot;:&quot;0&quot;,&quot;sex&quot;:&quot;0&quot;,&quot;permission&quot;:&quot;0&quot;,&quot;userName&quot;:&quot;test4&quot;,&quot;age&quot;:&quot;4&quot;}&quot;
+10:40:21.745 [main] DEBUG org.apache.http.wire - http-outgoing-2 &lt;&lt; &quot;HTTP/1.1 200 [\r][\n]&quot;
+10:40:21.745 [main] DEBUG org.apache.http.wire - http-outgoing-2 &lt;&lt; &quot;Content-Type: application/json;charset=UTF-8[\r][\n]&quot;
+10:40:21.745 [main] DEBUG org.apache.http.wire - http-outgoing-2 &lt;&lt; &quot;Transfer-Encoding: chunked[\r][\n]&quot;
+10:40:21.745 [main] DEBUG org.apache.http.wire - http-outgoing-2 &lt;&lt; &quot;Date: Sun, 13 Jun 2021 02:40:21 GMT[\r][\n]&quot;
+10:40:21.745 [main] DEBUG org.apache.http.wire - http-outgoing-2 &lt;&lt; &quot;[\r][\n]&quot;
+10:40:21.745 [main] DEBUG org.apache.http.wire - http-outgoing-2 &lt;&lt; &quot;4[\r][\n]&quot;
+10:40:21.745 [main] DEBUG org.apache.http.wire - http-outgoing-2 &lt;&lt; &quot;true[\r][\n]&quot;
+10:40:21.746 [main] DEBUG org.apache.http.headers - http-outgoing-2 &lt;&lt; HTTP/1.1 200 
+10:40:21.746 [main] DEBUG org.apache.http.headers - http-outgoing-2 &lt;&lt; Content-Type: application/json;charset=UTF-8
+10:40:21.746 [main] DEBUG org.apache.http.headers - http-outgoing-2 &lt;&lt; Transfer-Encoding: chunked
+10:40:21.746 [main] DEBUG org.apache.http.headers - http-outgoing-2 &lt;&lt; Date: Sun, 13 Jun 2021 02:40:21 GMT
+10:40:21.746 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection can be kept alive indefinitely
+10:40:21.746 [main] DEBUG org.apache.http.wire - http-outgoing-2 &lt;&lt; &quot;0[\r][\n]&quot;
+10:40:21.746 [main] DEBUG org.apache.http.wire - http-outgoing-2 &lt;&lt; &quot;[\r][\n]&quot;
+10:40:21.746 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection [id: 2][route: {}-&gt;http://192.168.159.1:8080] can be kept alive indefinitely
+10:40:21.746 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 2][route: {}-&gt;http://192.168.159.1:8080][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+10:40:21.746 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager is shutting down
+10:40:21.746 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-2: Close connection
+10:40:21.746 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection manager shut down
+10:40:21.746 [main] INFO com.course.cases.AddUserTest - 请求http:localhost/v1/addUser的结果是------&gt;true
+10:40:21.746 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+10:40:21.747 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 454884231 from pool.
+10:40:21.747 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1b1cfb87]
+10:40:21.747 [main] DEBUG com.course.model.getAddedUser - ==&gt;  Preparing: select * from user where username=? and password=? and age=? and sex=? and permission=? and is_delete=? 
+10:40:21.747 [main] DEBUG com.course.model.getAddedUser - ==&gt; Parameters: test4(String), 444(String), 4(String), 0(String), 0(String), 0(String)
+10:40:21.749 [main] DEBUG com.course.model.getAddedUser - &lt;==      Total: 2
+10:40:21.749 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1b1cfb87]
+10:40:21.750 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@1b1cfb87]
+10:40:21.750 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 454884231 to pool.
 </system-out>
   </testcase>
-  <testcase classname="com.course.cases.GetUserInfoTest" name="getUserInfo" time="0.066"/>
-  <testcase classname="com.course.cases.GetUserListTest" name="getUserList" time="0.094"/>
-  <testcase classname="com.course.cases.UpdateUserInfoTest" name="updateUserInfo" time="0.032"/>
-  <testcase classname="com.course.cases.UpdateUserInfoTest" name="deleteUserInfo" time="0.032"/>
+  <testcase classname="com.course.cases.GetUserInfoTest" name="getUserInfo" time="0.052"/>
+  <testcase classname="com.course.cases.GetUserListTest" name="getUserList" time="0.089"/>
+  <testcase classname="com.course.cases.UpdateUserInfoTest" name="updateUserInfo" time="0.029"/>
+  <testcase classname="com.course.cases.UpdateUserInfoTest" name="deleteUserInfo" time="0.021"/>
 </testsuite>

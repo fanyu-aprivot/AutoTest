@@ -2,7 +2,7 @@
 <testng-results skipped="0" failed="1" ignored="0" total="7" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="用户管理系统测试套件" duration-ms="1136" started-at="2021-06-13T01:43:59Z" finished-at="2021-06-13T01:44:01Z">
+  <suite name="用户管理系统测试套件" duration-ms="1021" started-at="2021-06-13T02:40:20Z" finished-at="2021-06-13T02:40:21Z">
     <groups>
       <group name="loginTrue">
         <method signature="LoginTest.loginTrue()[pri:0, instance:com.course.cases.LoginTest@10bbd20a]" name="loginTrue" class="com.course.cases.LoginTest"/>
@@ -11,45 +11,45 @@
         <method signature="LoginTest.loginFalse()[pri:0, instance:com.course.cases.LoginTest@10bbd20a]" name="loginFalse" class="com.course.cases.LoginTest"/>
       </group> <!-- loginFalse -->
     </groups>
-    <test name="用户管理系统测试" duration-ms="1136" started-at="2021-06-13T01:43:59Z" finished-at="2021-06-13T01:44:01Z">
+    <test name="用户管理系统测试" duration-ms="1021" started-at="2021-06-13T02:40:20Z" finished-at="2021-06-13T02:40:21Z">
       <class name="com.course.cases.UpdateUserInfoTest">
-        <test-method status="PASS" signature="updateUserInfo()[pri:0, instance:com.course.cases.UpdateUserInfoTest@1f7030a6]" name="updateUserInfo" duration-ms="31" depends-on-groups="loginTrue" started-at="2021-06-13T09:44:00Z" description="更新用户信息接口" finished-at="2021-06-13T09:44:01Z">
+        <test-method status="PASS" signature="updateUserInfo()[pri:0, instance:com.course.cases.UpdateUserInfoTest@1f7030a6]" name="updateUserInfo" duration-ms="29" depends-on-groups="loginTrue" started-at="2021-06-13T10:40:21Z" description="更新用户信息接口" finished-at="2021-06-13T10:40:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateUserInfo -->
-        <test-method status="PASS" signature="deleteUserInfo()[pri:0, instance:com.course.cases.UpdateUserInfoTest@1f7030a6]" name="deleteUserInfo" duration-ms="32" depends-on-groups="loginTrue" started-at="2021-06-13T09:44:01Z" description="删除用户信息接口" finished-at="2021-06-13T09:44:01Z">
+        <test-method status="PASS" signature="deleteUserInfo()[pri:0, instance:com.course.cases.UpdateUserInfoTest@1f7030a6]" name="deleteUserInfo" duration-ms="21" depends-on-groups="loginTrue" started-at="2021-06-13T10:40:21Z" description="删除用户信息接口" finished-at="2021-06-13T10:40:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteUserInfo -->
       </class> <!-- com.course.cases.UpdateUserInfoTest -->
       <class name="com.course.cases.LoginTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.course.cases.LoginTest@10bbd20a]" name="beforeTest" is-config="true" duration-ms="172" started-at="2021-06-13T09:43:59Z" description="测试准备工作" finished-at="2021-06-13T09:44:00Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.course.cases.LoginTest@10bbd20a]" name="beforeTest" is-config="true" duration-ms="164" started-at="2021-06-13T10:40:20Z" description="测试准备工作" finished-at="2021-06-13T10:40:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="loginFalse()[pri:0, instance:com.course.cases.LoginTest@10bbd20a]" name="loginFalse" duration-ms="614" started-at="2021-06-13T09:44:00Z" description="用户登录失败接口测试" finished-at="2021-06-13T09:44:00Z">
+        <test-method status="PASS" signature="loginFalse()[pri:0, instance:com.course.cases.LoginTest@10bbd20a]" name="loginFalse" duration-ms="538" started-at="2021-06-13T10:40:21Z" description="用户登录失败接口测试" finished-at="2021-06-13T10:40:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginFalse -->
-        <test-method status="PASS" signature="loginTrue()[pri:0, instance:com.course.cases.LoginTest@10bbd20a]" name="loginTrue" duration-ms="20" started-at="2021-06-13T09:44:00Z" description="用户登录成功接口测试" finished-at="2021-06-13T09:44:00Z">
+        <test-method status="PASS" signature="loginTrue()[pri:0, instance:com.course.cases.LoginTest@10bbd20a]" name="loginTrue" duration-ms="17" started-at="2021-06-13T10:40:21Z" description="用户登录成功接口测试" finished-at="2021-06-13T10:40:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTrue -->
       </class> <!-- com.course.cases.LoginTest -->
       <class name="com.course.cases.GetUserInfoTest">
-        <test-method status="PASS" signature="getUserInfo()[pri:0, instance:com.course.cases.GetUserInfoTest@184f6be2]" name="getUserInfo" duration-ms="65" depends-on-groups="loginTrue" started-at="2021-06-13T09:44:00Z" description="获取用户信息接口" finished-at="2021-06-13T09:44:00Z">
+        <test-method status="PASS" signature="getUserInfo()[pri:0, instance:com.course.cases.GetUserInfoTest@184f6be2]" name="getUserInfo" duration-ms="52" depends-on-groups="loginTrue" started-at="2021-06-13T10:40:21Z" description="获取用户信息接口" finished-at="2021-06-13T10:40:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getUserInfo -->
       </class> <!-- com.course.cases.GetUserInfoTest -->
       <class name="com.course.cases.AddUserTest">
-        <test-method status="FAIL" signature="addUser()[pri:0, instance:com.course.cases.AddUserTest@48503868]" name="addUser" duration-ms="90" depends-on-groups="loginTrue" started-at="2021-06-13T09:44:00Z" description="添加用户接口" finished-at="2021-06-13T09:44:00Z">
+        <test-method status="FAIL" signature="addUser()[pri:0, instance:com.course.cases.AddUserTest@48503868]" name="addUser" duration-ms="92" depends-on-groups="loginTrue" started-at="2021-06-13T10:40:21Z" description="添加用户接口" finished-at="2021-06-13T10:40:21Z">
           <exception class="org.apache.ibatis.exceptions.TooManyResultsException">
             <message>
-              <![CDATA[Expected one result (or null) to be returned by selectOne(), but found: 3]]>
+              <![CDATA[Expected one result (or null) to be returned by selectOne(), but found: 2]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 3
+              <![CDATA[org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 2
 	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:81)
 	at com.course.cases.AddUserTest.addUser(AddUserTest.java:55)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -94,7 +94,7 @@
         </test-method> <!-- addUser -->
       </class> <!-- com.course.cases.AddUserTest -->
       <class name="com.course.cases.GetUserListTest">
-        <test-method status="PASS" signature="getUserList()[pri:0, instance:com.course.cases.GetUserListTest@56aac163]" name="getUserList" duration-ms="94" depends-on-groups="loginTrue" started-at="2021-06-13T09:44:00Z" description="获取用户列表接口" finished-at="2021-06-13T09:44:00Z">
+        <test-method status="PASS" signature="getUserList()[pri:0, instance:com.course.cases.GetUserListTest@56aac163]" name="getUserList" duration-ms="89" depends-on-groups="loginTrue" started-at="2021-06-13T10:40:21Z" description="获取用户列表接口" finished-at="2021-06-13T10:40:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getUserList -->
