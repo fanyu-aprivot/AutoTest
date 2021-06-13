@@ -91,33 +91,32 @@
 <!--    打包插件-->
     <build>
         <plugins>
+            <!--maven-surefire-plugin执行test测试包-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.7.1</version>
                 <configuration>
-                    <suitXmlFiles>
-                        <suitXmlFile>
+                    <!--跳过测试代码执行-->
+                    <!--<skipTests>true</skipTests>-->
+                    <!--忽略测试代码执行失败-->
+                    <testFailureIgnore>true</testFailureIgnore>
+                    <suiteXmlFiles>
+                        <suiteXmlFile>
                             ./src/main/resources/testng.xml
-                        </suitXmlFile>
-                    </suitXmlFiles>
-                    <skip>false</skip>
+                        </suiteXmlFile>
+                    </suiteXmlFiles>
                 </configuration>
             </plugin>
-
-
+            <!-- maven 打依赖jar包 -->
             <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>repackage</goal><!--可以把依赖的包都打包到生成的Jar包中 -->
-                        </goals>
-                    </execution>
-                </executions>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
             </plugin>
         </plugins>
-
     </build>
 </project>
