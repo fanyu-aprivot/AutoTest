@@ -13,6 +13,5 @@ com\course\model\GetUserInfoCase.class
 com\course\config\ExtentTestNGIReporterListener$1.class
 com\course\model\UpdateUserInfoCase.class
 com\course\model\LoginCase.class
-com\course\Main.class
 com\course\model\AddUserCase.class
 com\course\model\User.class
