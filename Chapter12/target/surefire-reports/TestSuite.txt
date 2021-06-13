@@ -1,13 +1,13 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 2, Errors: 0, Skipped: 5, Time elapsed: 6.078 sec <<< FAILURE!
-loginFalse(com.course.cases.LoginTest)  Time elapsed: 2.546 sec  <<< FAILURE!
+Tests run: 7, Failures: 2, Errors: 0, Skipped: 5, Time elapsed: 6.129 sec <<< FAILURE!
+loginFalse(com.course.cases.LoginTest)  Time elapsed: 2.559 sec  <<< FAILURE!
 java.lang.NullPointerException
 	at com.course.cases.LoginTest.getResult(LoginTest.java:96)
 	at com.course.cases.LoginTest.loginFalse(LoginTest.java:119)
 
-loginTrue(com.course.cases.LoginTest)  Time elapsed: 2.019 sec  <<< FAILURE!
+loginTrue(com.course.cases.LoginTest)  Time elapsed: 2.017 sec  <<< FAILURE!
 java.lang.NullPointerException
 	at com.course.cases.LoginTest.getResult(LoginTest.java:96)
 	at com.course.cases.LoginTest.loginTrue(LoginTest.java:57)

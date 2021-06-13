@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="7" failures="2" name="TestSuite" time="6.067" errors="0" skipped="5">
+<testsuite tests="7" failures="2" name="TestSuite" time="6.129" errors="0" skipped="5">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="D:\D1\java\jdk\jdk1.8.0_45\jre\bin"/>
@@ -20,7 +20,7 @@
     <property name="basedir" value="C:\Users\darli\.ssh\workspace\muke\AutoTest\Chapter12"/>
     <property name="java.endorsed.dirs" value="D:\D1\java\jdk\jdk1.8.0_45\jre\lib\endorsed"/>
     <property name="os.arch" value="amd64"/>
-    <property name="surefire.real.class.path" value="C:\Users\darli\.ssh\workspace\muke\AutoTest\Chapter12\target\surefire\surefirebooter8915027470332464210.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\darli\.ssh\workspace\muke\AutoTest\Chapter12\target\surefire\surefirebooter8195960815139100720.jar"/>
     <property name="java.io.tmpdir" value="C:\Users\darli\AppData\Local\Temp\"/>
     <property name="line.separator" value="
 "/>
@@ -44,7 +44,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="D:\D1\java\jdk\jdk1.8.0_45\jre"/>
-    <property name="sun.java.command" value="C:\Users\darli\.ssh\workspace\muke\AutoTest\Chapter12\target\surefire\surefirebooter8915027470332464210.jar C:\Users\darli\.ssh\workspace\muke\AutoTest\Chapter12\target\surefire\surefire6063256740520665145tmp C:\Users\darli\.ssh\workspace\muke\AutoTest\Chapter12\target\surefire\surefire2515538567103296382tmp"/>
+    <property name="sun.java.command" value="C:\Users\darli\.ssh\workspace\muke\AutoTest\Chapter12\target\surefire\surefirebooter8195960815139100720.jar C:\Users\darli\.ssh\workspace\muke\AutoTest\Chapter12\target\surefire\surefire887088790860320676tmp C:\Users\darli\.ssh\workspace\muke\AutoTest\Chapter12\target\surefire\surefire6782271138723672534tmp"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="zh"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -61,7 +61,7 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.course.cases.LoginTest" name="loginFalse" time="2.546">
+  <testcase classname="com.course.cases.LoginTest" name="loginFalse" time="2.559">
     <failure type="java.lang.NullPointerException">java.lang.NullPointerException
 	at com.course.cases.LoginTest.getResult(LoginTest.java:96)
 	at com.course.cases.LoginTest.loginFalse(LoginTest.java:119)
@@ -72,34 +72,34 @@
 @HL-------------------------------------------------------
 @SLRunning TestSuite
 [TestNGContentHandler] [WARN] It is strongly recommended to add &quot;&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot; &gt;&quot; at the top of your file, otherwise TestNG may fail or not work as expected.
-11:59:16.134 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using &apos;class org.apache.ibatis.logging.slf4j.Slf4jImpl&apos; adapter.
-11:59:16.219 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-11:59:16.219 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-11:59:16.219 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-11:59:16.219 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
-11:59:16.317 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
-11:59:16.517 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 658909832.
-11:59:16.517 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@27462a88]
-11:59:16.517 [main] DEBUG com.course.model.loginCase - ==&gt;  Preparing: select * from login_case where id=? 
-11:59:16.548 [main] DEBUG com.course.model.loginCase - ==&gt; Parameters: 2(Integer)
-11:59:16.575 [main] DEBUG com.course.model.loginCase - &lt;==      Total: 1
-11:59:16.575 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@27462a88]
-11:59:16.575 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@27462a88]
-11:59:16.575 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 658909832 to pool.
+12:53:06.143 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using &apos;class org.apache.ibatis.logging.slf4j.Slf4jImpl&apos; adapter.
+12:53:06.233 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+12:53:06.233 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+12:53:06.233 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+12:53:06.233 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - PooledDataSource forcefully closed/removed all connections.
+12:53:06.334 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+12:53:06.539 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Created connection 658909832.
+12:53:06.539 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@27462a88]
+12:53:06.542 [main] DEBUG com.course.model.loginCase - ==&gt;  Preparing: select * from login_case where id=? 
+12:53:06.570 [main] DEBUG com.course.model.loginCase - ==&gt; Parameters: 2(Integer)
+12:53:06.597 [main] DEBUG com.course.model.loginCase - &lt;==      Total: 1
+12:53:06.601 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Resetting autocommit to true on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@27462a88]
+12:53:06.601 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Closing JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@27462a88]
+12:53:06.601 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Returned connection 658909832 to pool.
 LoginCase(id=2, userName=lucyerror, password=123, expected=false)
-http://127.0.0.1:8081/v1/login
-11:59:16.579 [main] INFO com.course.cases.LoginTest - ********开始验证loginFalse api*********
-11:59:16.603 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
-11:59:16.611 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
-11:59:16.615 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}-&gt;http://127.0.0.1:8081][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
-11:59:16.626 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {}-&gt;http://127.0.0.1:8081][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
-11:59:16.630 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {}-&gt;http://127.0.0.1:8081
-11:59:16.630 [main] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to /127.0.0.1:8081
-11:59:18.641 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: Shutdown connection
-11:59:18.641 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection discarded
-11:59:18.641 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 0][route: {}-&gt;http://127.0.0.1:8081][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+http://192.168.159.1:8081/v1/login
+12:53:06.601 [main] INFO com.course.cases.LoginTest - ********开始验证loginFalse api*********
+12:53:06.628 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+12:53:06.636 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+12:53:06.640 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}-&gt;http://192.168.159.1:8081][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+12:53:06.652 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 0][route: {}-&gt;http://192.168.159.1:8081][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+12:53:06.652 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {}-&gt;http://192.168.159.1:8081
+12:53:06.656 [main] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to /192.168.159.1:8081
+12:53:08.663 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-0: Shutdown connection
+12:53:08.663 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection discarded
+12:53:08.663 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 0][route: {}-&gt;http://192.168.159.1:8081][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
 </system-out>
-    <system-err>org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8081 [/127.0.0.1] failed: Connection refused: connect
+    <system-err>org.apache.http.conn.HttpHostConnectException: Connect to 192.168.159.1:8081 [/192.168.159.1] failed: Connection refused: connect
 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:158)
 	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
 	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
@@ -160,31 +160,31 @@ Caused by: java.net.ConnectException: Connection refused: connect
 	... 45 more
 </system-err>
   </testcase>
-  <testcase classname="com.course.cases.LoginTest" name="loginTrue" time="2.019">
+  <testcase classname="com.course.cases.LoginTest" name="loginTrue" time="2.017">
     <failure type="java.lang.NullPointerException">java.lang.NullPointerException
 	at com.course.cases.LoginTest.getResult(LoginTest.java:96)
 	at com.course.cases.LoginTest.loginTrue(LoginTest.java:57)
 </failure>
-    <system-out>11:59:18.645 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
-11:59:18.645 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 658909832 from pool.
-11:59:18.645 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@27462a88]
-11:59:18.649 [main] DEBUG com.course.model.loginCase - ==&gt;  Preparing: select * from login_case where id=? 
-11:59:18.649 [main] DEBUG com.course.model.loginCase - ==&gt; Parameters: 1(Integer)
-11:59:18.649 [main] DEBUG com.course.model.loginCase - &lt;==      Total: 1
+    <system-out>12:53:08.667 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Opening JDBC Connection
+12:53:08.667 [main] DEBUG org.apache.ibatis.datasource.pooled.PooledDataSource - Checked out connection 658909832 from pool.
+12:53:08.667 [main] DEBUG org.apache.ibatis.transaction.jdbc.JdbcTransaction - Setting autocommit to false on JDBC Connection [com.mysql.cj.jdbc.ConnectionImpl@27462a88]
+12:53:08.671 [main] DEBUG com.course.model.loginCase - ==&gt;  Preparing: select * from login_case where id=? 
+12:53:08.671 [main] DEBUG com.course.model.loginCase - ==&gt; Parameters: 1(Integer)
+12:53:08.671 [main] DEBUG com.course.model.loginCase - &lt;==      Total: 1
 LoginCase(id=1, userName=tt, password=123, expected=true)
-http://127.0.0.1:8081/v1/login
-11:59:18.649 [main] INFO com.course.cases.LoginTest - ********开始验证loginTrue api*********
-11:59:18.653 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
-11:59:18.653 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
-11:59:18.653 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}-&gt;http://127.0.0.1:8081][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
-11:59:18.653 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 1][route: {}-&gt;http://127.0.0.1:8081][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
-11:59:18.653 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {}-&gt;http://127.0.0.1:8081
-11:59:18.653 [main] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to /127.0.0.1:8081
-11:59:20.664 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-1: Shutdown connection
-11:59:20.664 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection discarded
-11:59:20.664 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 1][route: {}-&gt;http://127.0.0.1:8081][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+http://192.168.159.1:8081/v1/login
+12:53:08.671 [main] INFO com.course.cases.LoginTest - ********开始验证loginTrue api*********
+12:53:08.675 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: default
+12:53:08.675 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+12:53:08.675 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection request: [route: {}-&gt;http://192.168.159.1:8081][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+12:53:08.675 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection leased: [id: 1][route: {}-&gt;http://192.168.159.1:8081][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+12:53:08.675 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Opening connection {}-&gt;http://192.168.159.1:8081
+12:53:08.675 [main] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator - Connecting to /192.168.159.1:8081
+12:53:10.684 [main] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection - http-outgoing-1: Shutdown connection
+12:53:10.684 [main] DEBUG org.apache.http.impl.execchain.MainClientExec - Connection discarded
+12:53:10.684 [main] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager - Connection released: [id: 1][route: {}-&gt;http://192.168.159.1:8081][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
 </system-out>
-    <system-err>org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:8081 [/127.0.0.1] failed: Connection refused: connect
+    <system-err>org.apache.http.conn.HttpHostConnectException: Connect to 192.168.159.1:8081 [/192.168.159.1] failed: Connection refused: connect
 	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:158)
 	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
 	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
@@ -245,19 +245,19 @@ Caused by: java.net.ConnectException: Connection refused: connect
 	... 45 more
 </system-err>
   </testcase>
-  <testcase classname="com.course.cases.AddUserTest" name="addUser" time="2.019">
+  <testcase classname="com.course.cases.AddUserTest" name="addUser" time="2.017">
     <skipped/>
   </testcase>
-  <testcase classname="com.course.cases.GetUserInfoTest" name="getUserInfo" time="2.019">
+  <testcase classname="com.course.cases.GetUserInfoTest" name="getUserInfo" time="2.017">
     <skipped/>
   </testcase>
-  <testcase classname="com.course.cases.GetUserListTest" name="getUserList" time="2.019">
+  <testcase classname="com.course.cases.GetUserListTest" name="getUserList" time="2.017">
     <skipped/>
   </testcase>
-  <testcase classname="com.course.cases.UpdateUserInfoTest" name="updateUserInfo" time="2.019">
+  <testcase classname="com.course.cases.UpdateUserInfoTest" name="updateUserInfo" time="2.017">
     <skipped/>
   </testcase>
-  <testcase classname="com.course.cases.UpdateUserInfoTest" name="deleteUserInfo" time="2.019">
+  <testcase classname="com.course.cases.UpdateUserInfoTest" name="deleteUserInfo" time="2.017">
     <skipped/>
   </testcase>
 </testsuite>

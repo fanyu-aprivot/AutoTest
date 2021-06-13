@@ -2,7 +2,7 @@
 <testng-results skipped="5" failed="2" ignored="0" total="7" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="用户管理系统测试套件" duration-ms="4741" started-at="2021-06-13T03:59:15Z" finished-at="2021-06-13T03:59:20Z">
+  <suite name="用户管理系统测试套件" duration-ms="4756" started-at="2021-06-13T04:53:05Z" finished-at="2021-06-13T04:53:10Z">
     <groups>
       <group name="loginTrue">
         <method signature="LoginTest.loginTrue()[pri:0, instance:com.course.cases.LoginTest@10bbd20a]" name="loginTrue" class="com.course.cases.LoginTest"/>
@@ -11,9 +11,9 @@
         <method signature="LoginTest.loginFalse()[pri:0, instance:com.course.cases.LoginTest@10bbd20a]" name="loginFalse" class="com.course.cases.LoginTest"/>
       </group> <!-- loginFalse -->
     </groups>
-    <test name="用户管理系统测试" duration-ms="4741" started-at="2021-06-13T03:59:15Z" finished-at="2021-06-13T03:59:20Z">
+    <test name="用户管理系统测试" duration-ms="4756" started-at="2021-06-13T04:53:05Z" finished-at="2021-06-13T04:53:10Z">
       <class name="com.course.cases.UpdateUserInfoTest">
-        <test-method status="SKIP" signature="updateUserInfo()[pri:0, instance:com.course.cases.UpdateUserInfoTest@1f7030a6]" name="updateUserInfo" duration-ms="0" depends-on-groups="loginTrue" started-at="2021-06-13T11:59:20Z" description="更新用户信息接口" finished-at="2021-06-13T11:59:20Z">
+        <test-method status="SKIP" signature="updateUserInfo()[pri:0, instance:com.course.cases.UpdateUserInfoTest@1f7030a6]" name="updateUserInfo" duration-ms="0" depends-on-groups="loginTrue" started-at="2021-06-13T12:53:10Z" description="更新用户信息接口" finished-at="2021-06-13T12:53:10Z">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method UpdateUserInfoTest.updateUserInfo()[pri:0, instance:com.course.cases.UpdateUserInfoTest@1f7030a6] depends on not successfully finished methods in group "loginTrue"]]>
@@ -53,7 +53,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- updateUserInfo -->
-        <test-method status="SKIP" signature="deleteUserInfo()[pri:0, instance:com.course.cases.UpdateUserInfoTest@1f7030a6]" name="deleteUserInfo" duration-ms="0" depends-on-groups="loginTrue" started-at="2021-06-13T11:59:20Z" description="删除用户信息接口" finished-at="2021-06-13T11:59:20Z">
+        <test-method status="SKIP" signature="deleteUserInfo()[pri:0, instance:com.course.cases.UpdateUserInfoTest@1f7030a6]" name="deleteUserInfo" duration-ms="0" depends-on-groups="loginTrue" started-at="2021-06-13T12:53:10Z" description="删除用户信息接口" finished-at="2021-06-13T12:53:10Z">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method UpdateUserInfoTest.deleteUserInfo()[pri:0, instance:com.course.cases.UpdateUserInfoTest@1f7030a6] depends on not successfully finished methods in group "loginTrue"]]>
@@ -95,7 +95,7 @@
         </test-method> <!-- deleteUserInfo -->
       </class> <!-- com.course.cases.UpdateUserInfoTest -->
       <class name="com.course.cases.GetUserInfoTest">
-        <test-method status="SKIP" signature="getUserInfo()[pri:0, instance:com.course.cases.GetUserInfoTest@184f6be2]" name="getUserInfo" duration-ms="0" depends-on-groups="loginTrue" started-at="2021-06-13T11:59:20Z" description="获取用户信息接口" finished-at="2021-06-13T11:59:20Z">
+        <test-method status="SKIP" signature="getUserInfo()[pri:0, instance:com.course.cases.GetUserInfoTest@184f6be2]" name="getUserInfo" duration-ms="0" depends-on-groups="loginTrue" started-at="2021-06-13T12:53:10Z" description="获取用户信息接口" finished-at="2021-06-13T12:53:10Z">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method GetUserInfoTest.getUserInfo()[pri:0, instance:com.course.cases.GetUserInfoTest@184f6be2] depends on not successfully finished methods in group "loginTrue"]]>
@@ -137,11 +137,11 @@
         </test-method> <!-- getUserInfo -->
       </class> <!-- com.course.cases.GetUserInfoTest -->
       <class name="com.course.cases.LoginTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.course.cases.LoginTest@10bbd20a]" name="beforeTest" is-config="true" duration-ms="168" started-at="2021-06-13T11:59:15Z" description="测试准备工作" finished-at="2021-06-13T11:59:16Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.course.cases.LoginTest@10bbd20a]" name="beforeTest" is-config="true" duration-ms="172" started-at="2021-06-13T12:53:05Z" description="测试准备工作" finished-at="2021-06-13T12:53:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="FAIL" signature="loginFalse()[pri:0, instance:com.course.cases.LoginTest@10bbd20a]" name="loginFalse" duration-ms="2546" started-at="2021-06-13T11:59:16Z" description="用户登录失败接口测试" finished-at="2021-06-13T11:59:18Z">
+        <test-method status="FAIL" signature="loginFalse()[pri:0, instance:com.course.cases.LoginTest@10bbd20a]" name="loginFalse" duration-ms="2555" started-at="2021-06-13T12:53:06Z" description="用户登录失败接口测试" finished-at="2021-06-13T12:53:08Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -187,7 +187,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginFalse -->
-        <test-method status="FAIL" signature="loginTrue()[pri:0, instance:com.course.cases.LoginTest@10bbd20a]" name="loginTrue" duration-ms="2019" started-at="2021-06-13T11:59:18Z" description="用户登录成功接口测试" finished-at="2021-06-13T11:59:20Z">
+        <test-method status="FAIL" signature="loginTrue()[pri:0, instance:com.course.cases.LoginTest@10bbd20a]" name="loginTrue" duration-ms="2017" started-at="2021-06-13T12:53:08Z" description="用户登录成功接口测试" finished-at="2021-06-13T12:53:10Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -235,7 +235,7 @@
         </test-method> <!-- loginTrue -->
       </class> <!-- com.course.cases.LoginTest -->
       <class name="com.course.cases.AddUserTest">
-        <test-method status="SKIP" signature="addUser()[pri:0, instance:com.course.cases.AddUserTest@48503868]" name="addUser" duration-ms="0" depends-on-groups="loginTrue" started-at="2021-06-13T11:59:20Z" description="添加用户接口" finished-at="2021-06-13T11:59:20Z">
+        <test-method status="SKIP" signature="addUser()[pri:0, instance:com.course.cases.AddUserTest@48503868]" name="addUser" duration-ms="0" depends-on-groups="loginTrue" started-at="2021-06-13T12:53:10Z" description="添加用户接口" finished-at="2021-06-13T12:53:10Z">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method AddUserTest.addUser()[pri:0, instance:com.course.cases.AddUserTest@48503868] depends on not successfully finished methods in group "loginTrue"]]>
@@ -277,7 +277,7 @@
         </test-method> <!-- addUser -->
       </class> <!-- com.course.cases.AddUserTest -->
       <class name="com.course.cases.GetUserListTest">
-        <test-method status="SKIP" signature="getUserList()[pri:0, instance:com.course.cases.GetUserListTest@56aac163]" name="getUserList" duration-ms="0" depends-on-groups="loginTrue" started-at="2021-06-13T11:59:20Z" description="获取用户列表接口" finished-at="2021-06-13T11:59:20Z">
+        <test-method status="SKIP" signature="getUserList()[pri:0, instance:com.course.cases.GetUserListTest@56aac163]" name="getUserList" duration-ms="0" depends-on-groups="loginTrue" started-at="2021-06-13T12:53:10Z" description="获取用户列表接口" finished-at="2021-06-13T12:53:10Z">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method GetUserListTest.getUserList()[pri:0, instance:com.course.cases.GetUserListTest@56aac163] depends on not successfully finished methods in group "loginTrue"]]>
