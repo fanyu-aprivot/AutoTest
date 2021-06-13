@@ -8,7 +8,7 @@ logging:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/java_auto_test
+    url: jdbc:mysql://192.168.159.1:3306/java_auto_test
     username: root
     password: 123456
 
