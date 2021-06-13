@@ -1,9 +1,14 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 7, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 2.428 sec <<< FAILURE!
-addUser(com.course.cases.AddUserTest)  Time elapsed: 0.093 sec  <<< FAILURE!
-org.apache.ibatis.exceptions.TooManyResultsException: Expected one result (or null) to be returned by selectOne(), but found: 2
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:81)
-	at com.course.cases.AddUserTest.addUser(AddUserTest.java:55)
+Tests run: 7, Failures: 2, Errors: 0, Skipped: 5, Time elapsed: 6.078 sec <<< FAILURE!
+loginFalse(com.course.cases.LoginTest)  Time elapsed: 2.546 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.course.cases.LoginTest.getResult(LoginTest.java:96)
+	at com.course.cases.LoginTest.loginFalse(LoginTest.java:119)
+
+loginTrue(com.course.cases.LoginTest)  Time elapsed: 2.019 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.course.cases.LoginTest.getResult(LoginTest.java:96)
+	at com.course.cases.LoginTest.loginTrue(LoginTest.java:57)
 
